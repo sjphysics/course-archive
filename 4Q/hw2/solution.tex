@@ -1,0 +1,85 @@
+\documentclass[11pt,addpoints]{exam}
+\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{Homework 2}{}{Page \thepage\ of \numpages}
+\runningheadrule
+\author{Aaron GK}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=15mm,
+	right=15mm,
+	bottom=20mm,
+	top=15mm,
+}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+
+\begin{document}
+	\title{St John Baptist De La Salle Catholic School, Addis Ababa\\
+		\large Homework 2 Solution \\
+		4th Quarter}
+	\maketitle
+	\begin{center}
+		\fbox{\fbox{\parbox{6in}{\centering
+					Notes, and use of other aids is allowed.  Read all directions carefully and write your answers in the space provided.  To receive full credit, you must show all of your work. \textbf{Cheating or indications of cheating and similar answers will be punished accordingly}. 
+		}}}
+		\subsubsection*{Information}
+		\begin{itemize}
+			\item The homework is due primarily on \textbf{Friday}, \textbf{May 19th}. You can submit it on \textbf{Monday}, \textbf{May 22nd}, but the Advanced Problems won't count.
+			\item You should Work on it \textbf{in groups} and consult me if you have any questions. As I have reiterated multiple times, cheating between groups will have a serious consequence.
+			\item For purposes of neatness and simplicity of grading, you should do the homework on an \textbf{A-4 paper}.
+		\end{itemize}
+	\end{center}
+	\begin{center}
+		\subsection*{Questions}
+	\end{center}
+	
+	\begin{questions}
+		\question The refractive index of visible light from a material to air is 4.8. What is the speed of light through the material? What is the critical angle for this material?
+		$$n=\dfrac{c}{v}\implies v=\dfrac{c}{n}=\dfrac{3\times10^8m/s}{4.8}=6.25\times10^{7}m/s$$
+		The critical angle for the material when light passes from it to air is:
+		$$\sin\theta_c=\dfrac{n_2}{n_1}$$
+		$$\sin\theta_c=\dfrac{1}{4.8}\implies\theta_c=\arcsin\dfrac{1}{4.8}$$
+		$$\theta_c=12.02^0$$
+		\question Light is traveling from water to air.
+		\begin{enumerate}[label=(\alph*)]
+			\item What happens if the angle of incidence is $50^0$? \\ \\
+			We know that the critical angle of water is around 48.75 degrees. If light is incident at an angle of 50 degrees, it will get totally internally reflected. (\textit{Why is the critical angle of water 48.75 degrees}?) \\
+			\item If light is incident at an angle of $30^0$, what is the angle of refraction? \\ \\
+			For this problem, we can simply use Snell's law.
+			$$n_1\sin\theta_i=n_2\sin\theta_r\implies\sin\theta_r=\dfrac{n_1\sin\theta_i}{n_2}$$
+			$$\theta_r=\arcsin\dfrac{n_1\sin\theta_i}{n_2}=\arcsin\dfrac{1.33\times\sin30^0}{1}$$
+			$$\theta_r=\arcsin0.665$$
+			$$\theta_r=41.7^0$$
+		\end{enumerate}
+		\question When an object is submerged in a medium, it looks as though its nearer to the surface than it actually is when viewed from a outside. Show that, when viewed from almost vertically above, the refractive index of the medium can be given as a ratio of its real depth to the apparent depth. \\ \\
+		The solution for this problem has been done on office hours.
+		\question A ray of 700 nm light goes from air into medium($n=1.8$) at an incident angle of $45^0$. At what incident angle must 500 nm light enter flint glass to have the same angle of refraction? \\ \\
+		The idea that we need to work on this problem is to relate the refractive index of a medium to the wavelength of different lights passing through it. We have seen in class that the refractive index of a medium is inversely proportional to the wavelength of light passing through it. The larger the wavelength, the lesser the light gets refracted the higher the wavelength, the more it gets refracted.
+		$$n\propto\dfrac{1}{\lambda}\implies n\lambda\propto1\implies n\lambda=k$$
+		$$n_1\lambda_1=n_2\lambda_2$$
+		$$n_2=\dfrac{n_1\lambda_1}{\lambda_2}$$
+		$$n_2=\dfrac{1.8\times700nm}{500nm}$$
+		$$n_2=2.52$$
+		Now that we have found the refractive index of the medium for a 500nm light, let's attempt the problem. \\ \\
+		When 700nm light goes from air to the medium, its angle of refraction is
+		$$\theta_r=\arcsin\dfrac{n_1\sin\theta_i}{n_2}=\arcsin\dfrac{1\times\sin45^0}{1.8}\approxeq23.1^0$$
+		We are asked for the angle of incidence of the 500nm to have the same angle of refraction as the 700nm light, which is $23.1^0$
+		$$\theta_i=\arcsin\dfrac{n_2\sin\theta_r}{n_1}=\arcsin\dfrac{2.52\times\sin23.1^0}{1.8}\approxeq33.4^0$$
+		\subsection*{Advanced Problems}
+		\question Prove the law of reflection using Huygens' principle.
+	\end{questions}		
+\end{document}

@@ -1,0 +1,83 @@
+\documentclass[11pt,addpoints]{exam}
+\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\date{January, 2022}\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=10mm,
+	right=10mm,
+	bottom=10mm,
+	top=5mm,
+}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{Explainers}{}{Page \thepage\ of \numpages}
+\runningheadrule
+
+\firstpagefooter{}{}{}
+\runningfooter{By Aaron G.K.}{}{Page \thepage\ of \numpages}
+
+
+\begin{document}
+	\title{Explanations for questions 1, 20 \& 22}
+	\maketitle 
+	
+	Hi Hawi, here are the explanations for the questions you raised:
+	\begin{questions}
+					\question Which of the following changes to a parallel plate capacitor would not increase the energy stored in a capacitor at a fixed voltage?\\
+					\begin{oneparchoices}
+						\choice Increasing the area of the plates
+						\choice Increasing the dielectric constant
+						\choice Decreasing the charges on the plate
+						\choice Increasing the distance between the plates
+						\choice None of the above
+					\end{oneparchoices}
+					\\ \textbf{Answer:} C \\ \\
+					This is the case because generally speaking, we know that $C=\dfrac{Q}{V}$ and under normal conditions(conditions in which the distance affects the voltage), we get capacitance as a function of area \& distance between plates:
+					$$\text{V}=\text{Ed}$$
+					$$\text{V}=\dfrac{\text{Q}}{\text{A}\varepsilon_0}\text{d}=\dfrac{\text{Qd}}{\text{A}\varepsilon_0}$$
+					And from there, we can express it as follows:
+					$$\text{C}=\dfrac{\text{Q}}{\text{V}}$$
+					$$\text{C}=\dfrac{\text{Q}}{\dfrac{\text{Qd}}{\text{A}\varepsilon_0}}$$
+					$$\text{C}=\dfrac{\varepsilon_0\text{A}}{\text{d}}$$
+					But, you can see that all of this follows from the assumption that $V=Ed$ which works only when V depends on d. In this question, we have been told that voltage is constant regardless of whether E or d change. That brings us to a very important conclusion that d does not affect C because it doesn't affect the voltage.
+					\question A 3A current is flowing through a Copper conductor ($n= 8.5\times10^{28}m^{-3}$) that has a cross sectional area of 1mm$^2$. What is the drift speed of the electrons in this conductor?\\
+					\begin{oneparchoices}
+						\choice $2.205\times10^{4}m/s$
+						\choice $2.205\times10^{-4}m/s$
+						\choice $2.205\times10^{-8}m/s$
+						\choice $2.205\times10^{-2}m/s$
+						\choice None of the above
+					\end{oneparchoices} \textbf{Answer:} B \\ \\
+					As you have shown in your paper $I=naev$ which means, $v=\dfrac{I}{nae}$
+					$$v=\dfrac{I}{nae}=\dfrac{3A}{8.5\times10^{28}/m^3\times1.6\times10^{-19}C\times10^{-6}m^2}=\dfrac{3}{13.6\times10^{-3}}m/s=0.2205\times10^{-3}m/s$$
+					$$v=0.2205\times10^{-3}m/s\times\dfrac{10}{10}=0.2205\times10\times\dfrac{10^{-3}}{10}m/s=2.205\times10^{-4}m/s$$
+					\question If the value of acceleration due to gravity on the surface of the Earth is \textbf{g}, what will its value be at a height equal to the radius of the Earth above the surface?\\ \\
+					\begin{oneparchoices}
+						\choice $\dfrac{\textbf{g}}{8}$
+						\choice $\dfrac{\textbf{g}}{4}$
+						\choice $\dfrac{\textbf{g}}{2}$
+						\choice \textbf{g}
+						\choice None of the above
+					\end{oneparchoices}
+					\\ \textbf{Answer:} B \\ \\
+					For this question, let's look back at Newton's Law of Universal Gravitation:
+					$$F=\dfrac{GmM}{r^2}$$
+					But, this force is the weight which means weight = $F$:
+					$$mg=\dfrac{GmM}{r^2}$$
+					$$g=\dfrac{GM}{r^2}$$
+					So from, this we get the acceleration due to gravity as a function of distance from the larger mass. At the surface $\textbf{g}=\dfrac{GM}{R_E^2}$ but as we are at a height equal to the radius of the Earth, $r=2R_E$, which means:
+					$$\textbf{g}_{new}=\dfrac{GM}{r^2}=\dfrac{GM}{(2R_E)^2}$$ 
+					$$\textbf{g}_{new}=\dfrac{GM}{r^2}=\dfrac{GM}{4R_E^2}$$
+					$$\textbf{g}_{new}=\dfrac{1}{4}\dfrac{GM}{R_E^2}=\dfrac{1}{4}\textbf{g}=\dfrac{\textbf{g}}{4}$$
+				\end{questions}
+			\end{document}

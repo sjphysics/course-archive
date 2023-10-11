@@ -1,0 +1,72 @@
+\documentclass[9pt,addpoints]{exam}
+\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{Further Notes on Capacitance \& Resistance}{}{Page \thepage\ of \numpages}
+\runningheadrule
+\author{Aaron GK}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=10mm,
+	right=10mm,
+	bottom=5mm,
+	top=5mm,
+}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+\begin{document}
+	\title{Further Notes on Capacitance \& Resistance}
+	\maketitle
+	\subsection*{Capacitance \& Factors affecting it}
+	$\text{C}=\kappa\epsilon_0\dfrac{\text{A}}{\text{d}}$ \\ \\ \textbf{Solution}\\
+	We can express the electric field strength in in terms of charge and area as follows:
+	$$\text{E}=\dfrac{\text{Q}}{\text{A}\varepsilon_0}$$
+	We have seen that we can express the potential difference between charged plates as a product of the field and the distance between them:
+	$$\text{V}=\text{Ed}$$
+	$$\text{V}=\dfrac{\text{Q}}{\text{A}\varepsilon_0}\text{d}=\dfrac{\text{Qd}}{\text{A}\varepsilon_0}$$
+	However, capacitance is defined as follows:
+	$$\text{C}=\dfrac{\text{Q}}{\text{V}}$$
+	$$\text{C}=\dfrac{\text{Q}}{\dfrac{\text{Qd}}{\text{A}\varepsilon_0}}$$
+	$$\text{C}=\dfrac{\varepsilon_0\text{A}}{\text{d}}$$
+	If we add a dielectric, the field decreases by a factor of $\kappa$
+	$$\text{E}_\text{f}=\dfrac{\text{E}}{\kappa}$$
+	$$\text{V}_\text{f}=\dfrac{\text{Vd}}{\kappa}$$
+	$$\text{V}_\text{f}=\dfrac{\dfrac{\text{Qd}}{\text{A}\varepsilon_0}}{\kappa}=\dfrac{\text{Qd}}{\text{A}\varepsilon_0\kappa}$$
+	Thus, the final capacitance after a dielectric has been added is given as follows:
+	$$\text{C}=\dfrac{\text{Q}}{\text{V}_\text{f}}$$
+	$$\text{C}=\dfrac{\text{Q}}{\dfrac{\text{Qd}}{\text{A}\varepsilon_0\kappa}}$$
+	$$\text{C}_\text{f}=\dfrac{\kappa\varepsilon_0\text{A}}{\text{d}}$$
+	\subsection*{Resistance \& Factors affecting it}
+	Ohm's Law at the microscopic level can be described in terms of the resistivity and electric field as follows:
+	$$\text{J}=\dfrac{\text{E}}{\rho}$$
+	Where \textbf{J} is the current density vector and \textbf{E} is the electric field vector. The current density vector is the time rate of flow of charges through a given cross-sectional area. Thus, we define current density as follows:
+	$$\text{J}=\dfrac{\text{I}}{\text{A}}$$
+	We know that the microscopic definition of Ohm's Law for Ohmic substances is that the current through is directly proportional to the potential difference across it - ($\text{I}\propto\text{V}$) We thus define resistance R as follows:
+	$$\text{I}\propto\text{V}$$
+	$$\text{I}=\dfrac{1}{\text{R}}\times\text{V}$$
+	Here, the constant R is called the resistance of the conductor. We can express R in terms of V and I as follows:
+	$$\text{R}=\dfrac{\text{V}}{\text{I}}$$
+	To see the factors affecting resistance, let's try to express the current in terms of voltage.
+	$$\text{J}=\dfrac{\text{I}}{\text{A}}\text{, but we also know that }\text{J}=\dfrac{\text{E}}{\rho}\text{, thus:}$$
+	$$\dfrac{\text{I}}{\text{A}}=\dfrac{\text{E}}{\rho}$$
+	We can express the electric field inside a conductor in terms of the potential difference across it and its length:
+	$$\text{V}=\text{El}\implies\text{E}=\dfrac{\text{V}}{\text{l}}\text{, replacing this expression E of in the equation above, we get}$$
+	$$\dfrac{\text{I}}{\text{A}}=\dfrac{\dfrac{\text{V}}{\text{l}}}{\rho}\implies\dfrac{\text{I}}{\text{A}}=\dfrac{\text{V}}{\text{l}{\rho}}$$
+	We know that we can express the voltage as a function of the resistance and current: $\text{V}=\text{IR}$. Plugging in this value of V into the equation above, we get:
+	$$\dfrac{\text{I}}{\text{A}}=\dfrac{\text{IR}}{\text{l}{\rho}}$$
+	The current cancels out and we get:
+	$$\dfrac{1}{\text{A}}=\dfrac{\text{R}}{\text{l}{\rho}}\text{, thus we can express the resistance in terms of the other quantities}$$
+	$$\text{R}=\dfrac{\rho\text{l}}{\text{A}}$$
+	Thus, this tells us that the resistance of an Ohmic material has a direct relationship with $\rho$ and l while it has an inverse relationship with the area.
+\end{document}

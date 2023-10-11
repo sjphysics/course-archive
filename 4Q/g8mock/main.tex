@@ -1,0 +1,481 @@
+\documentclass[12pt,addpoints]{exam}
+%\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\usepackage{ circuitikz}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\usepackage{chemformula}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=20mm,
+	top=20mm,
+}
+\date{May/June 2023}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{Grade 8 Mock Examination}{}{Page \thepage\ of \numpages}
+\runningheadrule
+\firstpagefooter{}{}{}
+\runningfooter{By Mekdelawit F. \& Aaron G.K.}{}{Page \thepage\ of \numpages}
+\begin{document}
+	\title{St John Baptist De La Salle Catholic School, Addis Ababa\\
+		\large Grade 8 General Science Mock Examination \\
+		$4^\text{th}$ Quarter}
+	\maketitle
+	{Name:\underline{\hspace{2in}}\text{     }{Roll Number:\underline{\hspace{0.5in}}\text{     }{Section:\underline{\hspace{0.3in}}{Time Allowed: \bf{60  minutes}}
+				\subsubsection*{Multiple Choice}
+				\begin{questions}
+					\question The digestion of fat is facilitated by: \\ \begin{oneparchoices}
+						\choice gastric juice
+						\choice saliva
+						\choice bile
+						\choice stomach
+					\end{oneparchoices}
+					\question Among the following, which ones are the bones of the skull, vertebral column, hyoid, and the sternum? \\ \begin{oneparchoices}
+						\choice Appendicular
+						\choice Axial
+						\choice Irregular
+						\choice Long bone
+					\end{oneparchoices}
+					\question Which one of the following compounds is an alkyne? \\
+					 \begin{oneparchoices}
+						\choice $\ch{CH_3-CH_2-CH_3}$
+						\choice $\ch{CH+C-CH_3}$
+						\choice $\ch{CH_2=CH-CH_3}$
+						\choice $\ch{CH_3-CH_2-OH}$
+					\end{oneparchoices}
+					\question Salts can be prepared by the reaction between
+					\begin{choices}
+						\choice Active metals and water
+						\choice Acidic oxides and water
+						\choice Bases and nonmetals
+						\choice Bases and acids
+					\end{choices}
+					\question A lichen is a symbiotic association between a fungi and an algae. The algae provides food for its partner, while the fungi forms an anchor to protect the algae. This type of symbiosis would be referred to as \\ 
+					\begin{oneparchoices}
+						\choice commensalism
+						\choice parasitism
+						\choice mutualism
+						\choice amensalism
+					\end{oneparchoices}
+					\question Which of the following lists is composed of only biotic factors?
+					\begin{choices}
+						\choice Ant, temperature, soil, pH
+						\choice Snail, fish, algae, flea
+						\choice temperature, pH, Oxygen, Nitrate
+						\choice All
+					\end{choices}
+					\question Which one of the following statements is true about the mode of nutrition of organisms? 
+					\begin{choices}
+						\choice Chemoautotrophs produce their food by using sunlight, $\ch{CO_2}$, and water.
+						\choice Heterotrophs cannot make their food and they're also known as producers.
+						\choice Both photoautotrophs and chemoautotrophs use sunlight to produce their own food.
+						\choice Blue-green algae is a photoautotrophic organism.
+					\end{choices}
+					\question What is the name for a group og lung diseases and conditions that cause breathing difficulties? \\
+					\begin{oneparchoices}
+						\choice COPD
+						\choice Peptic ulcers
+						\choice Hemorrhoids
+						\choice Osteoporosis 
+					\end{oneparchoices}
+					\question In which part of the respiratory system does gaseous exchange take place? \\
+					\begin{oneparchoices}
+						\choice Bronchus
+						\choice Trachea
+						\choice Alveoli
+						\choice Bronchitis
+					\end{oneparchoices}
+					\question What is the term that describes the action of breaking down of large fat globules into smaller droplets? \\
+					\begin{oneparchoices}
+						\choice Digestion
+						\choice Emulsification
+						\choice Absorption
+						\choice Neutralization
+					\end{oneparchoices}
+					\question During digestion that takes place in the alimentary canal, food travels down the canal in which order?
+					\begin{choices}
+						\choice mouth, esophagus, stomach, large intestine, small intestine, and rectum
+						\choice mouth, stomach, esophagus, small intestine, large intestine, and rectum
+						\choice mouth, small intestine, large intestine, and rectum
+						\choice mouth, esophagus, stomach, small intestine, large intestine, and rectum
+					\end{choices} 
+					\question What is the function of the vein?
+					\begin{choices}
+						\choice It is the smallest blood vessel
+						\choice it is a site for substance exchange between blood and tissues
+						\choice A vein carries blood towards the heart
+						\choice Veins always carry deoxygenated blood
+					\end{choices}
+					\question Based on their shapes, bones are divided into four major categories. Which of the following is not one of the categories? \\
+					\begin{oneparchoices}
+						\choice Flat
+						\choice Short
+						\choice Regular
+						\choice Long
+					\end{oneparchoices}
+					\question A food chain is represented below: \\
+					phytoplankton $\rightarrow$ zooplankton $\rightarrow$ small fish $\rightarrow$ mackerel $\rightarrow$ seagull \\
+					Which organism in the food chain is the a producer? \\
+					\begin{oneparchoices}
+						\choice Seagull
+						\choice Zooplankton
+						\choice Phytoplankton
+						\choice Small fish
+					\end{oneparchoices}
+					\question All but one are diseases or conditions associated with the skin. Which one is the outlier? \\ 
+					\begin{oneparchoices}
+						\choice Rosacea
+						\choice Acne
+						\choice Leukemia
+						\choice Eczema
+					\end{oneparchoices} \\
+							\begin{circuitikz}
+								\tikzstyle{every node}=[font=\LARGE]
+								\node [font=\LARGE] at (9,11.5) {Mouse};
+								\node [font=\LARGE] at (6.75,13.25) {Wolf};
+								\node [font=\LARGE] at (12,13.5) {Vulture};
+								\node [font=\LARGE] at (6.75,9.5) {Eagle};
+								\node [font=\LARGE] at (12.75,10.5) {Snake};
+								\node [font=\LARGE] at (8,7) {Grasshopper};
+								\node [font=\LARGE] at (14,8) {Grasses};
+								\draw [ -Stealth] (8,12) -- (7.5,13);
+								\draw [ -Stealth] (7.75,13.25) -- (11,13.25);
+								\draw [ -Stealth] (10.25,11.5) -- (11.25,13);
+								\draw [ -Stealth] (8.25,11.25) -- (7.5,9.75);
+								\draw [ -Stealth] (10.25,11.25) -- (11.5,10.25);
+								\draw [ -Stealth] (12.75,8) -- (9.5,11.25);
+								\draw [ -Stealth] (12.75,7.75) -- (10.25,7);
+								\draw [ -Stealth] (7.5,7.5) -- (7.25,9);
+							\end{circuitikz}
+					\question Which organism is the primary consumer in the food web? \\
+					\begin{oneparchoices}
+						\choice Grasses
+						\choice Eagle
+						\choice Grasshopper
+						\choice Wolf
+					\end{oneparchoices}
+					\question The general formula that represents the alkene is \\
+					\begin{oneparchoices}
+						\choice \ch{C_nH_{2n+1}}
+						\choice \ch{C_nH_{2n+2}}
+						\choice \ch{C_nH_{2n}}
+						\choice \ch{C_nH_{2n-2}}
+					\end{oneparchoices}
+					\question Which of the following is an inorganic compound? \\
+					\begin{oneparchoices}
+						\choice \ch{H_2O}
+						\choice \ch{CH_4}
+						\choice \ch{(NH_2)_2CO}
+						\choice \ch{C_2H_2}
+					\end{oneparchoices}
+					\question Among the following compounds, which one is classified under acidic inorganic compounds? \\
+					\begin{oneparchoices}
+						\choice \ch{NaOH}
+						\choice \ch{Mg(OH)_2}
+						\choice \ch{HCl}
+						\choice \ch{Ca(OH)_2}
+					\end{oneparchoices}
+					\question In the reaction \ch{CaO + H_2O}$\rightarrow$ Y, "Y" represents \\
+					\begin{oneparchoices}
+						\choice \ch{CO_2}
+						\choice \ch{Ca(OH)_2}
+						\choice \ch{CaCO_3}
+						\choice \ch{2CaO}
+					\end{oneparchoices}
+					\question Which one of the following statements is true about oxides?
+					\begin{choices}
+						\choice Oxides are binary compounds containing Oxygen.
+						\choice All nonmetallic oxides are acidic oxides.
+						\choice All metallic oxides are basic oxides.
+						\choice All.
+					\end{choices}
+					\question These cells are the types of blood cells that lack nucleus \\
+					\begin{oneparchoices}
+						\choice Erythrocytes
+						\choice Leucocytes
+						\choice Thrombocytes
+						\choice A \& C
+					\end{oneparchoices}
+					\question A sex hormone that causes a lot of body changes associated with female puberty is \\
+					\begin{oneparchoices}
+						\choice progestrone
+						\choice estrogen
+						\choice testosterone
+						\choice androgen
+					\end{oneparchoices}
+					\question Nitrogen fixation is the conversion of 
+					\begin{choices}
+						\choice Nitrogen to ammonia
+						\choice Nitrate to nitrogen gas
+						\choice Nitrogen to nitrates
+						\choice A \& C
+					\end{choices}
+					\question  A type of tooth that is located behind the canines for the purpose of crushing, or grinding food is known as \\
+					\begin{oneparchoices}
+						\choice molar
+						\choice premolar
+						\choice incisor
+						\choice jaw
+					\end{oneparchoices}
+					\question Which one of the following is not the function of the skeletal system?
+					\begin{choices}
+						\choice It stores salt and calcium
+						\choice It produces blood cells
+						\choice It protects and supports the body
+						\choice It produces body heat
+					\end{choices}
+					\question Which, among the following is not classified as a layer of the skin? \\
+					\begin{oneparchoices}
+						\choice Epidermis
+						\choice Epididymis
+						\choice Hypodermis
+						\choice Dermis
+					\end{oneparchoices}
+					\question When measuring the mass of a 40kg pupil, experimenters found the results to be 42.1kg, 43.1kg, and 44kg. Is the measurement accurate or precise? \\
+					\begin{oneparchoices}
+						\choice both
+						\choice neither
+						\choice precise
+						\choice accurate
+					\end{oneparchoices}
+					\question Which of the following physical quantities' units is fundamental? \\
+					\begin{oneparchoices}
+						\choice Newton
+						\choice Candela
+						\choice Joule
+						\choice Watt
+					\end{oneparchoices}
+					\question Which of the following physical quantities is a vector quantity? \\
+					\begin{oneparchoices}
+						\choice Current
+						\choice Momentum
+						\choice Speed
+						\choice Power
+					\end{oneparchoices}
+					\question Out of the given planets below, which planet is closest to Jupiter? \\
+					\begin{oneparchoices}
+						\choice Pluto
+						\choice Earth
+						\choice Venus
+						\choice Mercury
+					\end{oneparchoices}
+					\question One of the following reasons is not why the Earth is suitable for life on Earth.
+					\begin{choices}
+						\choice Earth has right amount of liquid water that harbors and supports life.
+						\choice Earth's position with respect to the Sun and the Moon make life ideal.
+						\choice Earth's atmosphere is rich in Oxygen and other essential elements to support life.
+						\choice Earth is very massive and hence, repels asteroids and other celestial objects away from itself.
+					\end{choices}
+					\question The path of planets around the sun is \\
+					\begin{oneparchoices}
+						\choice circular
+						\choice elliptical
+						\choice rectangular
+						\choice zigzag
+					\end{oneparchoices}
+					\question Of the celestial bodies given below, which one is different in classification from the rest? \\
+					\begin{oneparchoices}
+						\choice Earth
+						\choice Mars
+						\choice Uranus
+						\choice Pluto
+					\end{oneparchoices}
+					\question On her song "Diamonds", famous singer Rihanna sings "\textit{shine bright like a diamond}". What is wrong about this lyric in terms of physics?
+					\begin{choices}
+						\choice Nothing is wrong with the song.
+						\choice She is wrong because diamonds are non-luminous, but reflect it.
+						\choice She is wrong because diamonds are dull and don't shine.
+						\choice She is wrong because diamonds are invisible to the naked eye. 
+					\end{choices} 
+					\question When light passes through a glass prism or a drop of water or foam, it splits into a multicolored rays. What do we call this phenomenon and what causes it respectively? \\
+					\begin{oneparchoices}
+						\choice dispersion, refraction
+						\choice dispersion, reflection
+						\choice refraction, interference 
+						\choice reflection, dispersion
+					\end{oneparchoices}
+					\question When light reflects off of a smooth surface, the reflection is regular. If parallel rays are incident on a smooth surface, what can we say about the reflected rays?
+					\begin{choices}
+						\choice The reflected rays are also parallel
+						\choice The rays are reflected with no pattern
+						\choice The reflected rays are perpendicular
+						\choice None
+					\end{choices}
+					\question Which of the following is true about refraction?
+					\begin{choices}
+						\choice It is the bouncing of rays when encountering a boundary.
+						\choice It is the bending of rays when passing through different media.
+						\choice It is the spreading out of waves.
+						\choice It is the interaction between different rays.
+					\end{choices}
+					\question Which of the following is not an imaging tool? \\
+					\begin{oneparchoices}
+						\choice eyes
+						\choice computed tomography
+						\choice camera
+						\choice bulb
+					\end{oneparchoices}
+					\question What do we mean by the rectilinear propagation of light?
+					\begin{choices}
+						\choice It means that light travels in a straight line.
+						\choice It means that light reflects off of a surface.
+						\choice It means that light undergoes a uniform motion.
+						\choice It means that light interacts with matter.
+					\end{choices}
+					\question At what temperature do the Fahrenheit and Celsius scales become equal? \\
+					\begin{oneparchoices}
+						\choice -60
+						\choice 60
+						\choice -40
+						\choice 40
+					\end{oneparchoices}
+					\question Which of the following colors has the highest frequency(is higher on the visible light spectrum)? \\
+					\begin{oneparchoices}
+						\choice blue
+						\choice red
+						\choice green
+						\choice indigo
+					\end{oneparchoices}
+					\question Which of the following is true about an image that can be cast on a screen? \\
+					\begin{oneparchoices}
+						\choice It is called a virtual image
+						\choice It is called a real image
+						\choice It is always upright
+						\choice It is mostly inverted
+					\end{oneparchoices}
+					\question Which of the following is true?
+					\begin{choices}
+						\choice Although humans are opaque to light, they are transparent to X rays.
+						\choice Light does not travel in a straight line.
+						\choice Light travels faster in water than it does in air.
+						\choice Light is instant. 
+					\end{choices}
+					\question A component which is used to close or break a circuit, is \\
+					\begin{oneparchoices}
+						\choice bulb
+						\choice switch
+						\choice wire
+						\choice dry cell
+					\end{oneparchoices}
+					\question Which of the following is the measure of the average kinetic energy of all particles in a system? \\
+					\begin{oneparchoices}
+						\choice Temperature
+						\choice Heat
+						\choice Pressure
+						\choice Mass
+					\end{oneparchoices}
+					\question When water boils, what heat transfer method helps it do so uniformly? \\
+					\begin{oneparchoices}
+						\choice Convection
+						\choice Radiation
+						\choice Conduction
+						\choice Current
+					\end{oneparchoices}
+					\question Which of the following devices has both a mirror and a lens in it? \\
+					\begin{oneparchoices}
+						\choice Eyes
+						\choice Camera
+						\choice Telescope
+						\choice Projector
+					\end{oneparchoices}
+					\question Which of the following is caused by reflection or use the application of reflection? \\
+					\begin{oneparchoices}
+						\choice Mirage
+						\choice Dispersion
+						\choice Periscope
+						\choice Lens
+					\end{oneparchoices}
+					\question Which of the following is incorrect about the images formed by plane mirrors? The images are \\
+					\begin{oneparchoices}
+						\choice virtual
+						\choice right-left inverted
+						\choice upright
+						\choice real
+					\end{oneparchoices}
+					\question Which of the following is true about the relationship between the intensity of sound waves (\textit{\textbf{I}}) at a radial distance(\textbf{\textit{r}}) from the source? \\
+					\begin{oneparchoices}
+						\choice $I\propto r^2$
+						\choice $I\propto \dfrac{1}{r^2}$
+						\choice $I\propto r$
+						\choice $I\propto \dfrac{1}{r}$
+					\end{oneparchoices}
+					\question Which of the following is true about the speed of sound in different media? 
+					\begin{choices}
+						\choice The speed of sound in air is greater than its speed in water
+						\choice The speed of sound in water is greater than its speed in air
+						\choice The speed of sound in air is greater than its speed in glass
+						\choice None
+					\end{choices}
+					\question When we bring two magnets nearby each other, which of the following happens?
+					\begin{choices}
+						\choice If the ends brought together are the same pole, they attract
+						\choice If the ends brought together are the opposite pole, they attract
+						\choice If the ends brought together are the opposite pole, they repel
+						\choice Nothing happens
+					\end{choices} 
+					\question When heat energy from the sun reaches the Earth through empty space, which of the following heat transfer methods are taking place? \\
+					\begin{oneparchoices}
+						\choice radiation
+						\choice convection
+						\choice reflection
+						\choice conduction
+					\end{oneparchoices}
+					\question A region of space where we experience a magnetic force is called \\
+					\begin{oneparchoices}
+						\choice Magnetic field
+						\choice Electric field
+						\choice Magnetic pole
+						\choice The Earth
+					\end{oneparchoices}
+					\question Which of the following is not a luminous object? \\
+					\begin{oneparchoices}
+						\choice The Moon
+						\choice A candle
+						\choice A stove
+						\choice The Sun 
+					\end{oneparchoices}	
+					\question Which of the following are magnetic substances? \\
+					\begin{oneparchoices}
+						\choice Aluminum
+						\choice Copper
+						\choice Iron
+						\choice Silver
+					\end{oneparchoices}
+				`	\question Which of the following is not a traditional unit of length? \\
+					\begin{oneparchoices}
+						\choice Meter stick
+						\choice Cubit
+						\choice Span
+						\choice Step
+					\end{oneparchoices}
+					\question When a freely moving magnetic needle deflects, it shows that the magnetic field has \\
+					\begin{oneparchoices}
+						\choice Mass
+						\choice Speed
+						\choice Acceleration
+						\choice Direction
+					\end{oneparchoices}
+					\question A circuit element's symbol is showed below. What element does it represent?
+					\begin{center}
+					\begin{circuitikz}
+						\tikzstyle{every node}=[font=\small]
+						\draw [line width=1.0pt](7.5,14.25) to[battery ] (7.5,12.5);
+					\end{circuitikz}	
+					\end{center}
+					\begin{oneparchoices}
+						\choice Capacitor
+						\choice Battery
+						\choice Wire
+						\choice Bulb
+					\end{oneparchoices}
+				\end{questions}
+			\end{document}

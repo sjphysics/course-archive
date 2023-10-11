@@ -1,0 +1,110 @@
+\documentclass[9pt,addpoints]{exam}
+\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{Homework 1 Solutions}{}{Page \thepage\ of \numpages}
+\runningheadrule
+\author{Aaron GK}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=10mm,
+	right=10mm,
+	bottom=5mm,
+	top=5mm,
+}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+
+\begin{document}
+	\title{St John Baptist De La Salle Catholic School, Addis Ababa\\
+		\large Homework 1 Solutions \\
+		3rd Quarter}
+	\maketitle
+	\begin{center}
+		\fbox{\fbox{\parbox{6in}{\centering
+					Notes, and use of other aids is allowed.  Read all directions carefully and write your answers in the space provided.  To receive full credit, you must show all of your work. \textbf{Cheating or indications of cheating and similar answers will be punished accordingly}. 
+		}}}
+		\subsubsection*{Information}
+		\begin{itemize}
+			\item The homework is due on \textbf{Wednesday}, \textbf{February 22}.
+			\item You should Work on it \textbf{in groups} and consult me if you have any questions. Cheating within groups is unacceptable.
+			\item For purposes of neatness and simplicity of grading, you should do the homework on an \textbf{A-4 paper}.
+		\end{itemize}
+	\end{center}
+	\begin{center}
+		\subsection*{Questions}
+	\end{center}
+	\begin{questions}
+		\question For vectors  $\vec{A}$=-$\hat{i}$-4$\hat{j}$+6$\hat{k}$ and $\vec{B}$=3$\hat{i}$-7$\hat{j}$-3$\hat{k}$, calculate:
+		\begin{enumerate}[label=(\Alph*)]
+			\item $\vec{A}+\vec{B}$ \\ \textbf{Answer} \\
+			To add the vectors, we add the similar components as we would do with polynomial expressions: \\
+			$$\vec{A}+\vec{B}=(-\hat{i}-4\hat{j}+6\hat{k})+(3\hat{i}-7\hat{j}-3\hat{k})$$
+			$$\vec{A}+\vec{B}=-2\hat{i}-11\hat{j}+3\hat{k}$$
+			\item 2$\vec{A}-\vec{B}$ \\ \textbf{Answer} \\
+			We compute the following just as we did in part (A), but we have to multiply each component of $\vec{A}$ by 2. \\
+			$$2\vec{A}-\vec{B}=2(-\hat{i}-4\hat{j}+6\hat{k})-(3\hat{i}-7\hat{j}-3\hat{k})=-2\hat{i}-8\hat{j}+12\hat{k}-(3\hat{i}-7\hat{j}-3\hat{k})$$
+			$$2\vec{A}-\vec{B}=-5\hat{i}-\hat{j}+15\hat{k}$$
+			\item Find the magnitudes of $\vec{A}+\vec{B}$ and 2$\vec{A}-\vec{B}$ and the unit vectors in their directions. \\ \textbf{Answer} \\
+			For $\vec{A}+\vec{B}$, \\
+			The magnitude is given by:
+			$$|\vec{A}+\vec{B}|=\sqrt{(-2)^2+(-11)^2+3^2}=\sqrt{134}$$
+			The unit vector in the direction of $\vec{A}+\vec{B}$ is given by the following:
+			$$\dfrac{\vec{A}+\vec{B}}{|\vec{A}+\vec{B}|}=\dfrac{-2\hat{i}-11\hat{j}+3\hat{k}}{\sqrt{134}}$$
+			You can do the same for 2$\vec{A}-\vec{B}$.
+		\end{enumerate}
+		-		\question Find the unit vector of direction for the following vector quantities:
+		\begin{enumerate}[label=(\Roman*)]
+			\item ${\vec{F}}=2\hat{i}-3\hat{j}+10\hat{k}$\\ \textbf{Answer} \\
+			We first need to find the magnitude of $\vec{F}$
+			$$|\vec{F}|=\sqrt{(2)^2+(-3)^2+(10)^2}$$
+			$$|\vec{F}|=\sqrt{(2)^2+(-3)^2+(10)^2}=\sqrt{113}$$
+			To find the unit vector $\hat{F}$;
+			$$\hat{F}=\dfrac{\vec{F}}{|\vec{F}|}=\dfrac{2\hat{i}-3\hat{j}+10\hat{k}}{\sqrt{113}}$$
+			\item ${\vec{B}}=5\hat{i}-7\hat{j}+15\hat{k}$
+			\item ${\vec{V}}=10\hat{i}-7\hat{k}$
+			\\ Compute II \& III similarly.
+		\end{enumerate}
+		\question A two dimensional force vector has a magnitude of 30N and is acting at an elevation angle of 37 degrees with respect to the origin. Write the force vector in its component form. \\ \textbf{Answer} \\
+		We first need to resolve the vector into its components. We have vertical(along y-axis) and horizontal(along x-axis) components:
+		$$\vec{A}_x=|\vec{A}|\cos\theta\hat{i}$$
+		$$\vec{A}_x=30N\times\cos37^0\hat{i}=24N\hat{i}$$
+		$$\vec{A}_y=|\vec{A}|\sin\theta\hat{j}$$
+		$$\vec{A}_y=30N\times\sin37^0\hat{j}=18N\hat{j}$$
+		$$\vec{A}=\vec{A}_x+\vec{A}_y$$
+		$$\vec{A}=(24\hat{i}+18\hat{j})N$$		
+		\question For the two points in the Cartesian plane A(2, 8) and B(-3, 5), find their respective position vectors and calculate the magnitude of those vectors.\\ \textbf{Answer} \\
+		$$\vec{A}=2\hat{i}+8\hat{j}$$
+		$$\vec{B}=-3\hat{i}+5\hat{j}$$
+		\question Show that the vectors $\vec{A}=\dfrac{10}{3}\hat{i}-6\hat{j}$ and $\vec{B}=\dfrac{6}{5}\hat{i}+\dfrac{2}{3}\hat{j}+10\hat{k}$ are perpendicular. \\ \textbf{Answer} \\
+		To show that the two vectors are perpendicular, we can just show that their dot product is 0.
+		$$\vec{A}\cdot\vec{B}=(\dfrac{10}{3}\hat{i}-6\hat{j})\cdot(\dfrac{6}{5}\hat{i}+\dfrac{2}{3}\hat{j}+10\hat{k})$$
+		$$\vec{A}\cdot\vec{B}=\dfrac{10}{3}(\dfrac{6}{5})-6(\dfrac{2}{3})=0$$
+		\question Find the angle between the vectors \textbf{A} and \textbf{B} in question 1.
+		\question For any vector $\vec{A}$, what is $\vec{A}\cdot\vec{A}$?\\ \textbf{Answer} \\
+		$$\vec{A}\cdot\vec{A}=|\vec{A}||\vec{A}|\cos0^0\text{ since the angle between a vector and itself is 0 degrees}$$
+		$$\vec{A}\cdot\vec{A}=|\vec{A}|^2$$
+		\subsection*{Advanced Problems}
+		\question What is the projection of the force vector  G =($\hat{i}$-5$\hat{j}$+3$\hat{k}$)N along the force vector  H =(-3$\hat{i}$+$\hat{j}$)N?\\ \textbf{Answer} \\
+		The projection of a vector $\vec{G}$ along $\vec{H}$ is the component of $\vec{G}$ that is in the same direction as $\vec{H}$. Thus:
+		$$\text{proj}^\textbf{G}_\textbf{H}=|\vec{G}|\cos\theta\hat{H}$$
+		$$\text{proj}^\textbf{G}_\textbf{H}=\dfrac{\vec{G}\cdot\vec{H}}{|\vec{H}|}\dfrac{\vec{H}}{|\vec{H}|}$$
+		$$\text{proj}^\textbf{G}_\textbf{H}=\dfrac{\vec{G}\cdot\vec{H}}{|\vec{H}|^2}\vec{H}$$
+		First, we find the dot product between the two vectors:
+		$$\vec{G}\cdot\vec{H}=-3-5=-8$$
+		$$|\vec{H}|=\sqrt{(-3)^2+(1)^2}=\sqrt{10}$$
+		$$\text{proj}^\textbf{G}_\textbf{H}=\dfrac{-8}{\sqrt{10}}(-3\hat{i}+\hat{j})N$$
+	\end{questions}		
+\end{document}

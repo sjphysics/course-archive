@@ -1,0 +1,137 @@
+\documentclass[9pt,addpoints]{exam}
+\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{Homework 5 Solution}{}{Page \thepage\ of \numpages}
+\runningheadrule
+\author{Aaron GK}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=10mm,
+	right=10mm,
+	bottom=5mm,
+	top=5mm,
+}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+\begin{document}
+	\title{St John Baptist De La Salle Catholic School, Addis Ababa\\
+		\large Homework 5 Solution\\
+		2nd Quarter}
+	\maketitle
+	\begin{center}
+		\fbox{\fbox{\parbox{6in}{\centering
+					Notes, and use of other aids is allowed.  Read all directions carefully and write your answers in the space provided.  To receive full credit, you must show all of your work. \textbf{Cheating or indications of cheating and similar answers will be punished accordingly}. 
+		}}}
+		\subsubsection*{Information}
+		\begin{itemize}
+			\item The homework is due on \textbf{Friday}, \textbf{December 30th}.
+			\item You should Work on it \textbf{individually} and consult me if you have any questions. As I have reiterated multiple times, cheating will have a serious consequence.
+			\item For purposes of neatness and simplicity of grading, you should do the homework on an \textbf{A-4 paper}.
+		\end{itemize}
+	\end{center}
+	\begin{center}
+		\subsection*{Questions}
+	\end{center}
+	
+	\begin{questions}
+		\question Define electric potential and describe its relationship with electric potential energy. \\ \\
+		\textbf{Solution}\\
+		We know that the potential energy is the stored energy in a system due to state or position. However, potential is the electrical potential energy per unit charge.
+		\question When a 1.5 V flashlight battery runs a single 20W headlight, how many electrons pass through it each second?\\ \\
+		\textbf{Solution}\\
+		From the given here, we can calculate the energy dissipated every second. By definition, we know that the power is the time rate of energy change. Thus, we can define energy has the product between power and time.
+		$$\text{P}=\dfrac{\text{E}}{\text{t}}$$
+		$$\text{E}=\text{Pt}$$
+		$$\text{E}=20\text{W}\times1\text{s}=20\text{J}$$
+		In a 1.5V flashlight, we know that the potential difference across the terminals of the battery are 1.5V. We know that electric potential is the potential energy per unit charge, thus we have:
+		$$\Delta\text{V}=\dfrac{\Delta\text{PE}}{\text{Q}}$$
+		$$\text{Q}=\dfrac{\Delta\text{PE}}{\Delta\text{V}}$$
+		$$\text{Q}=\dfrac{20\text{J}}{1.5\text{V}}=\dfrac{40}{3}\text{C}$$
+		We know that in a battery, it is the electrons that move around. thus the total charge here is due to the electrons:
+		$$\text{Q}=\text{n}_e\text{e}\text{, where e is the elementary charge and n}_e\text{ is the number of electrons}$$
+		$$\text{n}_e=\dfrac{\text{Q}}{\text{e}}=\dfrac{\frac{40}{3}\text{C}}{1.6\times10^{-19}\text{C}}$$
+		$$\text{n}_e=\dfrac{40}{4.8}\times10^{19}$$
+		\question What is the difference between a car battery that is 12V and a smaller flashlight that is also 12V? Why does the latter run out faster although they have the same voltage?\\ \\
+		\newpage
+		\textbf{Solution}\\
+		The potential difference being the same only lets us know that the potential energy per unit charge is the same for both appliances. Let's take the following example:
+		\begin{itemize}
+			\item Car Battery- PE: 36KJ  Charge: 3000 C 
+			\item Flashlight- PE: 600J   Charge: 50 C
+		\end{itemize}
+		We see that in both cases above, the potential difference is 12V, however, the energy stored in the car battery and flashlight are visibly different. Thus, the flashlight might run out faster since it has less energy, but the Car Battery has a higher longevity because it has more stored energy.
+		\question A lot of electrical appliances have potential differences set at some reference point. As you may recall, potential difference is the difference in absolute potential between points. For example, a voltaic cell might have a voltage of 1.5V, what does that mean? Also, why do we have ground as a reference in multiple electric appliances?\\ \\
+		\textbf{Solution}\\
+		The voltage is the potential difference between two points. For the voltaic cell with a voltage of 1.5V, it means that the difference in absolute potential between the positive and negative terminals of the battery are 1.5V. \\ \\
+		Many appliances have their potential difference set with reference to the ground. For simplicity of engineering, we set the potential of the ground to zero so that it is easier to work with the appliances. 
+		\question How far apart are two conducting plates that have an electric field strength of  6.40×$10^3$V/m  between them, if their potential difference is 8.0kV?\\ \\
+		\textbf{Solution}\\	
+		We have seen that we can express the potential difference in terms of the electric field strength.
+		$$\text{V}=\text{Ed}$$
+		$$\text{d}=\dfrac{\text{V}}{\text{E}}$$
+		$$\text{d}=\dfrac{8\times10^3\text{V}}{6.4\times10^3\text{V/m}}$$
+		$$\text{d}=1.25\text{m}$$	
+		\subsection*{Challenge Problems}
+		\textit{\textbf{The following challenge problems are not required to be submitted, but are highly encouraged}.} \\
+		\question Find the ratio of speeds of an electron and a negative hydrogen ion (one having an extra electron) accelerated through the same voltage.\\ \\
+		\textbf{Solution}\\	
+		We know that the mechanical energy of a system is conserved when the forces acting are conservative. In this case, we can see that:
+		$$\Delta\text{KE}+\Delta\text{PE}=0$$
+		$$\Delta\text{KE}=-\Delta\text{PE}$$
+		We know that we can express the potential energy in terms of the charge and potential difference ~ $\Delta\text{PE}=\text{q}\Delta\text{V}$.
+		$$\Delta\text{KE}=-\text{q}\Delta\text{V}$$
+		$$\dfrac{1}{2}\text{m}v^2=-\text{q}\Delta\text{V}$$
+		$$\dfrac{1}{2}\text{m}v^2=-\text{q}\Delta\text{V}$$
+		For the electron, we have the:		
+		$$v_e^2=\dfrac{-2\text{q}_e\Delta\text{V}}{\text{m}_e}$$
+		$$v_e^2=\dfrac{-2\times-1.6\times10^{-19}\text{C}\times\text{V}}{9.11\times10^{-31}\text{kg}}=\dfrac{2\times1.6}{9.11}\text{V}\times10^{12}m^2/s^2$$
+		For the negative Hydrogen atom, we do know that its charge is -e while its mass is essentially the mass of the proton(\textit{the mass of electrons is negligible compared to that of the protons}). Thus, we have the following:
+		$$v_H^2=\dfrac{-2\text{q}_H\Delta\text{V}}{\text{m}_H}$$ 
+		$$v_H^2=\dfrac{-2\times-1.6\times10^{-19}\text{C}\times\text{V}}{1.673\times10^{-27}\text{kg}}=\dfrac{2\times1.6}{1.673}\text{V}\times10^{7}m^2/s^2$$
+		To find the ratio of the speeds, we essentially divided the speed of the electron by the speed of the Hydrogen ion:
+		$$\dfrac{v_e^2}{v_H^2}=\dfrac{\dfrac{2\times1.6}{9.11}\text{V}\times10^{12}m^2/s^2}{\dfrac{2\times1.6}{1.673}\text{V}\times10^{7}m^2/s^2}$$
+		$$\dfrac{v_e^2}{v_H^2}=\dfrac{1.673}{9.11}\times10^5$$
+		$$\dfrac{v_e}{v_H}=\sqrt{\dfrac{16.73}{9.11}\times10^4}$$
+		\question Why are equipotential lines and surfaces perpendicular to the electric field lines?\\ \\
+		\textbf{Solution}\\
+		We have seen that in equipotential lines \& surfaces, no work needs to be done for charges to move. From the definition of work, we have the following:
+		$$\text{W}=\text{Fd}\cos\theta$$
+		If the work done is zero, it means that:
+		$$\text{Fd}\cos\theta=0$$
+		From this, we can infer that the either F, d or $\cos\theta$ are 0. In our case since a charge is present, the only plausible situation is that $\cos\theta$=0. We do know that for the cosine the be zero, the angle should be 90$^0$. This implies that F and d are perpendicular. Thus, the electric field lines(that act in the direction of the force) and the equipotential lines are perpendicular.
+		\question A lightning bolt strikes a tree, moving 30.0 C of charge through a potential difference of 1.00×10$^2$MV.\begin{itemize}
+			\item What energy was dissipated?\\ \\
+			\textbf{Solution}\\
+			The dissipated energy is:
+			$$\Delta\text{PE}=\text{q}\Delta\text{V}$$
+			$$\Delta\text{PE}=30.0\text{C}\times1.00\times10^{8}V$$
+			$$\Delta\text{PE}=3.0\times10^{9}\text{J}$$
+			\item  What mass of water could be raised from  room temperature(25$^0$c) to the boiling point and then boiled by this energy?\\ \\
+			\textbf{Solution}\\
+			For this to be the case;
+			$$\text{Q}=\text{mc}\Delta\text{T}+\text{mL}_\text{v}$$
+			The specific heat capacity of water is 4.2kJ/kgK while its latent heat of vaporization is 2,260 kJ/kg.
+			$$3.0\times10^{9}\text{J}=\text{mc}\Delta\text{T}+\text{mL}_\text{v}$$
+			$$3.0\times10^{9}\text{J}=\text{m}(\text{c}\Delta\text{T}+\text{L}_\text{v})$$
+			$$3.0\times10^{9}\text{J}=\text{m}(4.2\times10^3\text{J/kgK}\times75\text{K}+2.26\times10^6\text{J/kg})$$
+			$$3.0\times10^{9}\text{J}=\text{m}(3.15\times10^5\text{J/kg}+2.26\times10^6\text{J/kg})$$
+			$$3.0\times10^{9}\text{J}=\text{m}(2.575\times10^6\text{J/kg})$$
+			$$\text{m}=1.165\times10^3\text{kg}$$
+			\item Discuss the damage that could be caused to the tree by the expansion of the boiling steam.\\ \\
+			\textbf{Solution}\\
+			This will make a huge damage to the tree including exploding it and causing burns.
+		\end{itemize} 
+	\end{questions}		
+\end{document}

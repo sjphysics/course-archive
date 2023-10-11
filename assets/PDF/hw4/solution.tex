@@ -1,0 +1,88 @@
+\documentclass[9pt,addpoints]{exam}
+\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{Homework 4 Solution}{}{Page \thepage\ of \numpages}
+\runningheadrule
+\author{Aaron GK}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=10mm,
+	right=10mm,
+	bottom=5mm,
+	top=5mm,
+}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+
+\begin{document}
+	\title{St John Baptist De La Salle Catholic School, Addis Ababa\\
+		\large Homework 4 Solution\\
+		2nd Quarter}
+	\maketitle
+	\begin{center}
+		\fbox{\fbox{\parbox{6in}{\centering
+					Notes, and use of other aids is allowed.  Read all directions carefully and write your answers in the space provided.  To receive full credit, you must show all of your work. \textbf{Cheating or indications of cheating and similar answers will be punished accordingly}. 
+		}}}
+		\subsubsection*{Information}
+		\begin{itemize}
+			\item The homework is due on \textbf{Monday}, \textbf{December 19th}.
+			\item You should Work on it \textbf{individually} and consult me if you have any questions. As I have reiterated multiple times, cheating will have a serious consequence.
+			\item For purposes of neatness and simplicity of grading, you should do the homework on an \textbf{A-4 paper}.
+		\end{itemize}
+	\end{center}
+	\begin{center}
+		\subsection*{Questions}
+	\end{center}
+	
+	\begin{questions}
+		\question Define electric field and factors affecting a field that emerges from a source charge. \\ \\
+		\textbf{Solution:} \\
+		Electric field is the region around a charge where an electric force due to the charge is experienced. We have seen that an electric field due to the charge is given by:
+		$$\text{E}=\dfrac{\text{kQ}}{\text{r}^2}$$
+		The magnitude of the charge and the distance from the source affect the electric field at a point.
+		\question Discuss the differences between a source charge and a test charge. \\ \\
+		\textbf{Solution:} \\
+		A source charge is a charge that is the source of a field that we are examining. A test charge, is a very small hypothetical charge, usually  a positive one that we use to study the field around the source charge.
+		\question If there are two charges placed on the x-axis, a -2$\mu\text{C}$ charge at $\text{x}=3\text{nm}$ and a +40$\mu\text{C}$ charge at $\text{x}=-2\text{nm}$, compute the following:
+		\begin{itemize}
+			\item Calculate the electrostatic force between the two charges.\\ \\
+			\textbf{Solution:} \\
+			To find the force, we use Cuolomb's Law:
+			To calculate the force, we use the separation distance and the magnitude of the charges. The distance between the charges is the absolute value of the difference between the coordinates of the charges:
+			$$\text{r}=|-2\text{nm}-3\text{nm}|=5\text{nm}$$
+			$$\text{F}=\dfrac{\text{kQq}}{\text{r}^2}$$
+			$$\text{F}=\dfrac{9\times10^{9}\text{Nm}^2/\text{C}^2\times2\times10^{6}\text{C}\times40\times10^{-6}\text{C}}{(5\times10^{-9}m)^2}$$
+			\item If there is a charge of +1nC placed at the position $y=1.0\text{a}^0$, find the net force and electric field at that point.\\ \\
+			\textbf{Solution:} \\
+			To find the net force on the charge placed at $y=1.0\text{a}^0$, we need to first find the force between the +1nC charge and the other two charges individually, and then calculate the net force(we resolve the electric forces and add them along each dimension).	To find the electric field, we use the net force:
+			$$\text{E}_{\text{net}}=\dfrac{\text{F}_{\text{net}}}{\text{q}}$$	
+		\end{itemize}
+		\question Discuss the superposition principle and its applications. \\ \\
+		\textbf{Solution:} \\
+		The basic idea behind superposition principle is that the resultant force on any one charge equals the vector sum of the forces exerted by the other individual charges that are present. We apply this principle while calculating the net electric field/ forces on charges.
+		
+		\question What is the electric field of the nucleus of a Hydrogen $^1_1\text{H}$ atom 1m away from the nucleus. Compare this to the acceleration due to gravity by the nucleus. \\ \\
+		\textbf{Solution:} \\
+		The nucleus of this specific Hydrogen isotope consists only of a proton, so its charge is $\textbf{e}=+1.6\times10^{-19}\text{C}$. Thus, to calculate the electric field 1m away from the nucleus, we can calculate it as follows:
+		$$\text{E}=\dfrac{\text{kQ}}{\text{r}^2}$$
+		$$\text{E}=\dfrac{9\times10^9\times1.6\times10^{-19}}{1\text{m}^2}\text{N/C}$$
+		$$\text{E}=1.44\times10^{-9}\text{N/C}$$
+		For comparison, let's calculate the acceleration due to gravity by the Hydrogen nucleus. Again, since the nucleus consists only of one Hydrogen, the mass of the nucleus is equal to the mass of a single proton. Thus, we can calculate the acceleration due to gravity as follows:
+		$$\text{g}=\dfrac{\text{Gm}_\text{p}}{\text{r}^2}$$
+		$$\text{g}=\dfrac{6.67\times10^{-11}\times1.673\times10^{-24}}{(1)^2}\text{N/kg}$$
+		$$\text{g}=1.12\times10^{-34}\text{N/kg}$$
+	\end{questions}		
+\end{document}

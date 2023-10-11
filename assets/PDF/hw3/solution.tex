@@ -1,0 +1,155 @@
+\documentclass[9pt,addpoints]{exam}
+\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{Homework 3 Solution}{}{Page \thepage\ of \numpages}
+\runningheadrule
+\author{Aaron GK}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=10mm,
+	right=10mm,
+	bottom=5mm,
+	top=5mm,
+}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+\date{December 13, 2022}
+
+\begin{document}
+	\title{St John Baptist De La Salle Catholic School, Addis Ababa\\
+		\large Homework 3 Solution \\
+		2nd Quarter}
+	\maketitle
+	\begin{center}
+		\fbox{\fbox{\parbox{6in}{\centering
+					Notes, and use of other aids is allowed.  Read all directions carefully and write your answers in the space provided.  To receive full credit, you must show all of your work. \textbf{Cheating or indications of cheating and similar answers will be punished accordingly}. 
+		}}}
+		\subsubsection*{Information}
+		\begin{itemize}
+			\item The homework is due on \textbf{Tuesday}, \textbf{December 13th}.
+			\item You should Work on it \textbf{individually} and consult me if you have any questions. As I have reiterated multiple times, cheating will have a serious consequence.
+			\item For purposes of neatness and simplicity of grading, you should do the homework on an \textbf{A-4 paper}.
+		\end{itemize}
+	\end{center}
+	\begin{center}
+		\subsection*{Questions}
+	\end{center}
+	
+	\begin{questions}
+		\question A grindstone with a mass of 50 kg and radius 1.5 m maintains a constant rotation rate of 8.0 rad/s by a motor while a knife is pressed against the edge with a force of 10.0 N. The coefficient of kinetic friction between the grindstone and the blade is 0.8. What is the power provided by the motor to keep the grindstone at the constant rotation rate? \\ \\
+		\textbf{Solution} \\
+		We need to calculate the torque first. To do that we just need to find the torque by the friction force - since it is equal to the torque  provided by the motor.
+		
+		$$\tau=\mu\text{FR}\text{, since the frictional force is }\mu\text{F}$$
+		$$\tau=0.8\times10.0\text{N}\times1.5\text{m}$$
+		$$\tau=12\text{Nm}$$
+		
+		We know that power is the rate of work done in a given amount of time:
+		$$\text{P}=\dfrac{\text{W}}{\text{t}}\text{, but we know that the work, W, is given as W=}\tau\theta\text{, thus we have:}$$
+		$$\text{P}=\dfrac{\tau\theta}{t}=\tau\omega$$
+		$$\text{P}=12\text{Nm}\times8.0\text{rad/s}$$
+		$$\text{P}=96\text{W}$$
+		\question A potter’s disk spins from rest up to 8 rev/s in 10 s. The disk has a mass 5.0 kg and radius 50.0 cm. What is the angular momentum of the disk at  t=5s, what about t=10 s?(consider the moment of inertia of a disk to be $\text{I}=\dfrac{1}{2}\text{mR}^2$) \\ \\
+		\textbf{Solution} \\
+		To make our calculations easier, it is usually nice to convert them to standard units. Hence, 8 rev/s is 16$\pi$rad/s \& 50.0cm is 0.5m. \\
+		First, we need to calculate the angular acceleration of our disk:
+		$$\alpha=\dfrac{\omega_f-\omega_i}{t}=\dfrac{16\pi\text{rad/s}-0}{10s}=1.6\pi\text{rad/s}$$
+		To find the angular momentum at a given time, we need to calculate the moment of inertia and the angular speed.
+		$$\text{I}=\dfrac{1}{2}\text{mR}^2=\dfrac{1}{2}(5.0\text{kg})(0.5\text{m})^2=0.625\text{kg-m}^2$$
+		\textbf{Angular Momentum at t=5s} \\
+		We need to find $\omega$ at t=5s. To do that, we can do the following:
+		$$\omega_f=\omega_i+\alpha\text{t}$$
+		$$\omega_f=0+1.6\pi\text{rad/s}\times5\text{s}$$
+		$$\omega_f=8.0\pi\text{rad/s}$$
+		The angular momentum, is simply the product of the moment of inertia and the angular speed:
+		$$\text{L}=\text{I}\omega$$
+		$$\text{L}=0.625\text{kg-m}^2\times8.0\pi\text{rad/s}$$	
+		$$\text{L}=5.0\pi\text{kg-m}^2/\text{s}$$
+		\textbf{Angular Momentum at t=10s} \\
+		Similar to the procedures above, we first find the $\omega_f$ at 10s.
+		$$\omega_f=\omega_i+\alpha\text{t}$$
+		$$\omega_f=0+1.6\pi\text{rad/s}\times10\text{s}$$
+		$$\omega_f=16\pi\text{rad/s}$$
+		The angular momentum again, is the product of the moment of inertia and the angular speed:
+		$$\text{L}=\text{I}\omega$$
+		$$\text{L}=0.625\text{kg-m}^2\times16.0\pi\text{rad/s}$$	
+		$$\text{L}=10.0\pi\text{kg-m}^2/\text{s}$$
+		\question A satellite of mass 2000 kg is in circular orbit about Earth. The radius of the orbit of the satellite is equal to two times the radius of Earth. (a) How far away is the satellite? \\ \\
+		\textbf{Solution} \\
+		Since it is at a distance of 2R - while R is the radius of the Earth, we can calculate it to be 12,800km(1.28$\times 10^{7}$m) since the radius of the Earth is 6400km. However, the distance between the center of the Earth to the satellite is actually 3R = 3$\times6.4\times10^6$m=1.92$\times10^7$m		
+		(b) Find the kinetic, potential, and total energies of the satellite. \\ \\
+		\textbf{Solution} \\
+		To find the kinetic energy of the satellite, we first need to find the orbital speed of the satellite:	
+		$$v=\sqrt{\dfrac{\text{GM}}{R}}$$
+		$$v=\sqrt{\dfrac{6.67\times10^{-11}\times6.0\times10^{24}}{1.92\times10^{7}}}\text{m/s}$$
+		$$v=\sqrt{2.08\times10^7}\text{m/s}$$
+		$$v\approxeq4560.7\text{m/s}$$
+		$$\text{K}=\dfrac{1}{2}\text{mv}^2$$
+		$$\text{K}=\dfrac{1}{2}2000\text{kg}\times(4560.7\text{m/s})^2$$
+		$$\text{K}=1000\text{kg}\times2.08\times10^7\text{m/s}$$
+		$$\text{K}=2.08\times10^{10}\text{J}$$
+		To find the potential energy, we do the following:
+		$$\text{U}=-\dfrac{\text{GmM}}{r}$$
+		$$\text{U}=-\dfrac{6.67\times10^{-11}\times2000\times6.0\times10^{24}}{1.92\times10^7}\text{J}$$
+		$$\text{U}=-4.17\times10^{10}\text{J}$$
+		To find the total energy, we have to add the potential and kinetic energies up:
+		$$\text{E}=\text{K+U}$$
+		$$\text{E}=2.08\times10^{10}\text{J}+(-4.17\times10^{10}\text{J})$$
+		$$\text{E}=-2.09\times10^{10}\text{J}$$
+		\question The mass of a ball of radius 1.0 m is 6.0 kg. It rolls across a horizontal surface with a speed of 10.0 m/s. (a) How much work is required to stop the hoop?  \\ \\ 
+		\textbf{Solution} \\
+		The total work done is the change in the kinetic energy:
+		$$\text{W}=\varDelta\text{K}$$
+		Since our ball is both in translational and rotational motion, we have to calculate the total kinetic energy:
+		$$\text{K}=\text{K}_{\text{trans}}+\text{K}_{\text{rot}}$$
+		$$\text{K}=\dfrac{1}{2}\text{mv}^2+\dfrac{1}{2}\text{I}\omega^2$$
+		$$\text{K}=\dfrac{1}{2}\text{mv}^2+\dfrac{1}{2}\times\dfrac{2}{5}\text{mr}^2\omega^2$$
+		$$\text{K}=\dfrac{1}{2}\text{mv}^2+\dfrac{1}{5}\text{mv}^2$$	
+		$$\text{K}=\dfrac{7}{10}\times6.0\text{kg}(10.0\text{m/s})^2$$
+		So, our initial total kinetic energy is:
+		$$\text{K}=420\text{J}$$	
+		After we do work, we stop the ball, which means that our final kinetic energy is 0. Thus, the change in the kinetic energy is:
+		$$\varDelta K=\text{K}_f-\text{K}_i$$
+		$$\varDelta K=0-420\text{J}$$
+		$$\varDelta K=-420\text{J}$$
+		Since our work is the change in kinetic energy:
+		$$\text{W}=-420\text{J}$$
+		(b) If the hoop starts up a surface at  30°  to the horizontal with a speed of 10.0 m/s, how far along the incline will it travel before stopping and rolling back down? (\textit{Assume the ball is a hollow sphere, in which case its moment of inertia is given by:} $\text{I}=\dfrac{2}{5}\text{mr}^2)$\\ \\ 
+		\textbf{Solution} \\
+		Since the mechanical energy is conserved, the kinetic energy at the bottom of the incline should equal the gravitational potential energy at the utmost distance the ball reaches. Thus,
+		$$\text{K}_i=\text{GPE}_{\text{top}}$$
+		$$420\text{J}=\text{mgh}$$
+		$$\text{h}=\dfrac{420\text{J}}{\text{mg}}$$		
+		$$\text{h}=\dfrac{420\text{J}}{(6.0\text{kg})(10\text{N/kg})}$$
+		$$\text{h}\approxeq7.0\text{m}$$
+		However, the height we found isn't the distance the ball goes up the incline. The height is the opposite side to the angle of the incline given to us. Thus,
+		$$\sin30^0=\dfrac{\text{h}}{S}$$
+		$$S=\dfrac{\text{h}}{\sin30^0}$$
+		$$S=\dfrac{7.0\text{m}}{\frac{1}{2}}$$
+		$$S=14\text{m}$$
+		\question A neutron star is a cold, collapsed star with nuclear density. A particular neutron star has a mass three times that of our Sun with a radius of 15.0 km. (a) What would be the weight of a 100-kg astronaut on standing on its surface? \\ \\ 
+		\textbf{Solution} \\
+		The weight can be calculated using Newton's Law of Universal Gravitation. But, let's list out the given values in the problem:
+		$$\text{m}=3\times \text{m}_{\text{sun}}=3\times1.989\times10^{30}kg=5.967\times10^{30}kg$$
+		$$\text{r}=15\text{km}=1.5\times10^4\text{m}$$
+		We can now calculate the weight:
+		$$\text{F}=\dfrac{\text{GmM}}{\text{r}^2}$$
+		$$\text{F}=\dfrac{6.67\times10^{-11}\times100\times5.967\times10^{30}}{(1.5\times10^{4})^2}\text{N}$$
+		$$\text{F}\approxeq1.77\times10^{14}\text{N}$$
+		 (b) What does this tell us about landing on a neutron star? \\ \\
+		 \textbf{Solution} \\
+		 It will be deadly.
+	\end{questions}		
+\end{document}

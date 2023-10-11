@@ -1,0 +1,69 @@
+\documentclass[9pt,addpoints]{exam}
+\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{Homework 7}{}{Page \thepage\ of \numpages}
+\runningheadrule
+\author{Aaron GK}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=10mm,
+	right=10mm,
+	bottom=5mm,
+	top=5mm,
+}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+
+\begin{document}
+	\title{St John Baptist De La Salle Catholic School, Addis Ababa\\
+		\large Homework 7 \\
+		2nd Quarter}
+	\maketitle
+	\begin{center}
+		\fbox{\fbox{\parbox{6in}{\centering
+					Notes, and use of other aids is allowed.  Read all directions carefully and write your answers in the space provided.  To receive full credit, you must show all of your work. \textbf{Cheating or indications of cheating and similar answers will be punished accordingly}. 
+		}}}
+		\subsubsection*{Information}
+		\begin{itemize}
+			\item The homework is due on \textbf{Monday}, \textbf{January 16th}.
+			\item You should Work on it \textbf{individually} and consult me if you have any questions. As I have reiterated multiple times, cheating will have a serious consequence.
+			\item For purposes of neatness and simplicity of grading, you should do the homework on an \textbf{A-4 paper}.
+		\end{itemize}
+	\end{center}
+	\begin{center}
+		\subsection*{Questions}
+	\end{center}
+	
+	\begin{questions}
+		\question Define current and relate it to resistance. Compare capacitance to resistance.
+		\question A capacitor in an RC circuit has a capacitance of 12nF while the resistor has a resistance of 600K$\Omega$. If the capacitor is charged until it is full, answer the following questions:
+		\begin{itemize}
+			\item Calculate the amount of time it would take the charge in the capacitor to drop by 63\%.
+			\item Calculate the amount of time it would take for the charge to drop by 50\%.
+			\item Calculate the amount of charge left when $\dfrac{2}{3}\tau$ amount of time has dissipated.
+		\end{itemize}
+		\question There are three capacitors of capacitances 20$\mu$F, 40$\mu$F \& 80$\mu$F.
+		\begin{itemize}
+			\item Calculate the effective capacitance when the capacitors are connected in series with a battery of 1.5V. Calculate the charge, voltage \& energy in each capacitor.
+			\item Calculate the effective capacitance when the capacitors are connected in parallel with a battery of 1.5V. Calculate the charge, voltage \& energy in each capacitor.
+		\end{itemize}
+		\subsection*{Additional Challenge Problems}
+		\textit{As usual, the following problems are not required to be submitted, but I highly suggest you work on them} 
+		\question We have seen that there is actually a barrier between the plates of a capacitor - the dielectric, which is an insulator. However, we do know that current flows in the circuit while a capacitor is present in a circuit. Why doesn't the dielectric stop the current? Explain in terms of displacement current.
+		\question Show that the current in an RC circuit while the capacitor is discharging can be described as follows 
+		$$\text{I(t)} = - \frac{\text{Q}}{\text{RC}}e^{-\text{t}/\tau}$$
+	\end{questions}		
+\end{document}

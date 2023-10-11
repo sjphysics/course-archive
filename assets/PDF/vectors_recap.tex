@@ -1,0 +1,124 @@
+\documentclass[9pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{multirow,booktabs}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{wrapfig}
+\usepackage{setspace}
+\usepackage{calc}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{framed}
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+\usepackage{geometry}
+\geometry{
+a4paper,
+total={170mm,257mm},
+left=20mm,
+top=20mm,
+}
+\title{Math Tools: Vectors Recap}
+\author{Aaron G.K.}
+\begin{document}
+\maketitle
+\section*{Vectors}
+Vectors are Euclidean quantities that have geometric representations as arrows in one dimension (in a line), in two dimensions (in a plane), or in three dimensions (in space). They can be added, subtracted, or multiplied. They are quantities that need \textit{magnitude}, \textit{direction} and a proper \textit{unit} to be adequatey expressed.
+\subsection*{Representing Vectors}
+Assuming a coordinate system(could be  line, plane, or even a space), we can represent vectors by writing unique directed line segments that have their initial points at the origin. They are usually described in terms of their components in a coordinate system. Even in everyday life we naturally think of the concept of perpendicular projections in a rectangular coordinate system. For example, if you ask someone for directions to a particular location, you will more likely be told to go 3km east and 4 km north than 5 km in the direction 53$^0$ north of east.\\ \\
+In a an xy - coordinate system in a plane, a point in a plane is described by a pair of coordinates (x, y). In a similar fashion, a vector  $\vec{A}$ in a plane is described by a pair of its vector coordinates. The x-coordinate of vector  $\vec{A}$ is called its x-component and the y-coordinate of vector  $\vec{A}$ is called its y-component. The vector x-component is a vector denoted by  $\vec{A_x}$ while the vector y-component is a vector denoted by  $\vec{A_y}$. \\ \\
+Since the x and y vector components of a vector are the perpendicular projections of the vector onto the  x and  y-axes, respectively, each vector on a Cartesian plane can be expressed as the vector sum of its vector components as follows:
+$$\vec{A} = \vec{A}_{x} + \vec{A}_{y} $$
+\begin{center}
+	\includegraphics[scale=0.5]{cartesian_plane}
+\end{center}
+Since the magnitude of unit vectors is one, we usually denote the positive direction on the x-axis by the unit vector  $\hat{i}$
+and the positive direction on the y-axis by the unit vector  $\hat{j}$. That means, we can describe the vectors above as follows:
+$$\vec{A}_{x} = A_{x} \hat{i}$$
+$$\vec{A}_{y} = A_{y} \hat{j}$$
+The above implies that we can express vector $\vec{A}$ as follows:
+$$\vec{A} = A_{x} \hat{i} + A_{y} \hat{j} \ldotp \label{2.12}$$
+If we know the scalar components $A_x$ and $A_y$, we can find the magnitude of the vector and the direction angle that is measured (conventionally) counterclockwise from the positive x- axis. To find the magnitude, we simply use Pythagoras' theorem since $\vec{A_x}$ and $\vec{A_y}$ are orthogonal:
+$$A^{2} = A_{x}^{2} + A_{y}^{2} \Leftrightarrow A = \sqrt{A_{x}^{2} + A_{y}^{2}} $$
+To find the direction angle($\theta$), we can use any of the trigonometric functions, but tangent seems generally simpler. Thus,
+$$\tan \theta = \frac{A_{y}}{A_{x}} \Rightarrow \theta = \tan^{-1} \left(\dfrac{A_{y}}{A_{x}}\right)$$
+\subsection*{Three Dimensional Vectors}
+To specify the location of a point in space, we need three coordinates (x, y, z), where coordinates x and z specify locations in a plane, and coordinate y gives a vertical positions above or below the plane. A three-dimensional space has three orthogonal directions, so instead of the two unit vectors we used earlier, we need three unit vectors to define a three-dimensional coordinate system. The third unit vector in the z direction is the $\hat{k}$ vector. The order in which the axes are labeled, which is the order in which the three unit vectors appear, is important because it defines the orientation of the coordinate system. You may see in different places the axis definitions being different. Some textbooks use the z axis as the vertical axis while others use y. It really is an arbitrary choice and it does not affect the physics.
+\begin{center}
+	\includegraphics[scale=0.4]{cartesian_space}
+\end{center}
+In three-dimensional space, vector $\vec{A}$ has three vector components: the x-component $\vec{A_x}=A_x\hat{i}$, which is the part of vector $\vec{A}$ along the x-axis; the y-component $\vec{A_y}=A_y\hat{j}$, which is the part of vector $\vec{A}$ along the y-axis; the z-component $\vec{A_z}=A_z\hat{k}$, which is the part of vector $\vec{A}$ along the x-axis; A vector in three-dimensional space is the vector sum of its three vector components:
+$$\vec{A} = A_{x} \hat{i} + A_{y} \hat{j} + A_{z} \hat{k}$$
+To find the magnitude of our three-dimensional vector, we use the method we used above(Pythagoras' theorem) as follows. To understand, look closely at the figure below:
+\begin{center}
+	\includegraphics[scale=0.6]{resultant_3d}
+\end{center}	
+This makes the magnitude of $\vec{A}$ to be given as:
+$$A = \sqrt{A_{x}^{2} + A_{y}^{2} + A_{z}^{2}}$$
+When giving directions for three-dimensional vectors, we can't necessarily use one specific angle because there needs to be at least two angles to adequately describe the vector. The general rule of finding the unit vector  $\hat{A}$ of direction for any vector $\vec{A}$ is to divide it by its magnitude V:
+$$\hat{V} = \frac{\vec{V}}{V}$$
+We see from this expression that the unit vector of direction is dimensionless because the numerator and the denominator in have the same physical unit. That means, we can express the unit vector of direction in terms of unit vectors of the axes.
+\section*{Vector Algebra}
+\subsection*{Vector Addition}
+If we express vectors in terms of the unit vectors of the coordinate axes, it simplifies a lot of things in vector algebra. Since we have the common unit vectors for all vectors we can just add the coefficients of the unit vectors to simply arrive at the result we want. While adding vectors, it is common to multiply them with scalars when doing certain calculations - \textbf{it is important to understand that multiplication of a scalar with a vector will always result in a vector that is in the same direction as the original vector}. \\ \\
+For two vectors $\vec{A}$ and $\vec{B}$ such that $\vec{A}=A_{x}\; \hat{i} + A_{y}\; \hat{j} + A_{z}\; \hat{k}$ and $\vec{B}=B_{x}\; \hat{i} + B_{y}\; \hat{j} + B_{z}\; \hat{k}$, the sum of the two vectors, $\vec{R}=\vec{A}+\vec{B}$ is given by:
+$$\vec{R} = \vec{A} + \vec{B} = (A_{x}\; \hat{i} + A_{y}\; \hat{j} + A_{z}\; \hat{k}) + (B_{x}\; \hat{i} + B_{y}\; \hat{j} + B_{z}\; \hat{k}) = (A_{x} + B_{x})\; \hat{i} + (A_{y} + B_{y})\; \hat{j} + (A_{z} + B_{z})\;$$
+\subsection*{Product of Vectors}
+A vector can be multiplied by a vector or a scalar. When a vector is multiplied by a scalar we always get a vector in the same direction as the original one. However, when a vector is multiplied by another vector, we can get a scalar, or a vector depending on the type of product we use. \\ \\
+There are two kinds of products: one kind of multiplication is a type of product in which the result is a scalar - hence called the scalar(dot) product. For example, work is a scalar product of force and displacement which are both vectors. Another kind of product is one where the result is a vector - hence called a vector(cross) product. For example, in rotational motion, torque is defined as a vector product applied force and lever arm which are both vectors. 
+\subsubsection*{Scalar Product}
+As we have seen above, scalar product is a product of vectors whose result is scalar. The scalar product of two vectors $\vec{A}$ and $\vec{B}$ is formally defined as follows:
+$$\vec{A}\; \cdot \vec{B} = AB \cos \theta\hspace{0.2in}\text{such that }\theta\text{ is the angle between the two vectors}$$
+One can see that for orthogonal vectors($\theta=90^0$), the dot product of the two vectors is always 0. In the Cartesian coordinate system, scalar products of unit vectors of an axis with that of an other's is always 0 because the unit vectors of the coordinate axes are always perpendicular. That means,
+$$\hat{i}\cdot\hat{j}=|\hat{i}||\hat{j}|\cos90^0=0$$
+$$\hat{i}\cdot\hat{k}=|\hat{i}||\hat{k}|\cos90^0=0$$
+$$\hat{j}\cdot\hat{k}=|\hat{j}||\hat{k}|\cos90^0=0$$
+For the dot product of unit vectors on coordinate axes with themselves, we get the following:
+$$\hat{i}\; \cdotp\; \hat{i} = i^{2} = \hat{j}\; \cdotp\; \hat{j} = j^{2} = \hat{k}\; \cdotp\; \hat{k} = 1 $$
+This is always because the magnitude of the unit vectors is 1; $|\hat{i}| = |\hat{j}| = |\hat{k}|$ \\ \\
+For two vectors $\vec{A}$ and $\vec{B}$ such that $\vec{A} = A_{x}\; \hat{i} + A_{y}\; \hat{j} + A_{z}\; \hat{k}\; \text{ and } \vec{B} = B_{x}\; \hat{i} + B_{y}\; \hat{j} + B_{z}\; \hat{k}$, the dot product can be given as follows:
+$$\vec{A}\; \cdotp \vec{B} = (A_{x}\; \hat{i} + A_{y}\; \hat{j} + A_{z}\; \hat{k})\; \cdotp (B_{x}\; \hat{i} + B_{y}\; \hat{j} + B_{z}\; \hat{k}) \\ $$
+$$= A_{x}B_{x}\; \hat{i}\; \cdotp\; \hat{i} + A_{x}B_{y}\; \hat{i}\; \cdotp\; \hat{j} + A_{x}B_{z}\; \hat{i}\; \cdotp\; \hat{k} \\ + A_{y}B_{x}\; \hat{j} \cdotp\; \hat{i} + A_{y}B_{y}\; \hat{j}\; \cdotp\; \hat{j} + A_{y}B_{z}\; \hat{j} \cdotp\; \hat{k} \\ + A_{z}B_{x}\; \hat{k}\; \cdotp\; \hat{i} + A_{z}B_{y}\; \hat{k}\; \cdotp\; \hat{j} + A_{z}B_{z}\; \hat{k}\; \cdotp\; \hat{k}$$
+Since scalar products of two different unit vectors of axes give zero, and scalar products of unit vectors with themselves give one there are only three nonzero terms in this expression. It simplifies to:
+$$\vec{A}\; \cdotp \vec{B} = A_{x}B_{x} + A_{y}B_{y} + A_{z}B_{z}$$
+\textbf{\textit{It is extremely important to understand that $\vec{A}\; \cdotp \vec{B}$ is a scalar quantity.}} \\ \\
+From our primary definition of a scalar product, we know that $\vec{A}\; \cdot \vec{B} = AB \cos \theta\hspace{0.2in}$ but we have also seen have that the scalar product can be expressed in terms of the components is $\vec{A}\; \cdotp \vec{B} = A_{x}B_{x} + A_{y}B_{y} + A_{z}B_{z}$. Thus, we have 
+$$ AB \cos \theta\hspace{0.2in} = A_{x}B_{x} + A_{y}B_{y} + A_{z}B_{z}$$
+This means, 
+$$\cos \theta  = \dfrac{A_{x}B_{x} + A_{y}B_{y} + A_{z}B_{z}}{AB} \ldotp \label{2.34}$$
+\subsubsection*{Vector Product}
+Vector product is a type of product between vectors that results in a vector. The vector product of two vectors $\vec{A}$ and $\vec{B}$ is formally defined as follows:
+$$|\vec{A}\; \times \vec{B}| = AB \sin \theta\hspace{0.2in}\text{such that }\theta\text{ is the angle between the two vectors}$$
+It is important to know that the cross product of two vectors is a \textbf{vector} that is perpendicular to both vectors that were multiplied. That's why in the above equation, we can express the magnitude of the cross product and not the vector product itself. Had we wanted to describe the vector product, we could define a unit vector that is in the direction of the vector product and use it as follows:
+$$\vec{A}\; \times \vec{B}= AB\sin\theta\hat{\textbf{n}}$$
+Where $\hat{\textbf{n}}$ is a unit vector in the direction of $\vec{A}\; \times \vec{B}$ and is perpendicular to both $\vec{A}$ and $\vec{B}$. \\ \\
+Unlike dot products, cross products tend to result in vectors and are a little more complex to compute. From the definition, above we can see that the vector product of a vector with itself is always 0 since the sine of 0 is 0. Let's elaborate more here:
+$$\hat{i} \times \hat{i} = \hat{j} \times \hat{j} = \hat{k} \times \hat{k} = 0 $$
+To simplify the work, let's introduce a simple figure to visualize how it works:
+\begin{center}
+	\includegraphics[scale=1.2]{cross_product_circle}
+\end{center}
+While we are going counterclockwise on the schematic visualizer above, we get the following
+$$\begin{cases} \hat{i} \times \hat{j} = + \hat{k}, \\ \hat{j} \times \hat{k} = + \hat{i}, \\ \hat{k} \times \hat{i} = + \hat{j} \ldotp \end{cases}$$
+Similarly, going clockwise, we get
+$$\begin{cases} \hat{j} \times \hat{i} = - \hat{k}, \\ \hat{k} \times \hat{j} = - \hat{i}, \\ \hat{i} \times \hat{k} = - \hat{j} \ldotp \end{cases}$$
+One thing we notice is that the order of the vectors in the cross product matters(that is, cross product is \textbf{not} commutative) and if the order changes, the product changes sign. For two vectors $\vec{A}$ and $\vec{B}$ such that $\vec{A} = A_{x}\; \hat{i} + A_{y}\; \hat{j} + A_{z}\; \hat{k}\; \text{ and } \vec{B} = B_{x}\; \hat{i} + B_{y}\; \hat{j} + B_{z}\; \hat{k}$, the cross product can be given as follows:
+$$\vec{A} \times \vec{B}  = (A_{x}\; \hat{i} + A_{y}\; \hat{j} + A_{z}\; \hat{k}) \times (B_{x}\; \hat{i} + B_{y}\; \hat{j} + B_{z}\; \hat{k})$$
+$$= A_{x}\; \hat{i} \times (B_{x}\; \hat{i} + B_{y}\; \hat{j} + B_{z}\; \hat{k}) + A_{y}\; \hat{j} \times (B_{x}\; \hat{i} + B_{y}\; \hat{j} + B_{z}\; \hat{k}) + A_{z}\; \hat{k} \times (B_{x}\; \hat{i} + B_{y}\; \hat{j} + B_{z}\; \hat{k}) $$
+$$ = A_{x}B_{x}\; \hat{i} \times \hat{i} + A_{x}B_{y}\; \hat{i} \times \hat{j} + A_{z}B_{z}\; \hat{i} \times \hat{k} \\  + A_{y}B_{x}\; \hat{j} \times \hat{i} + A_{y}B_{y}\; \hat{j} \times \hat{j} + A_{y}B_{z}\; \hat{j} \times \hat{k} \\  + A_{z}B_{x}\; \hat{k} \times \hat{i} + A_{z}B_{y}\; \hat{k} \times \hat{j} + A_{z}B_{z}\; \hat{k} \times \hat{k} $$
+$$= A_{x}B_{x}(0) + A_{x}B_{y}(+\hat{k}) + A_{x}B_{z}(-\hat{j}) \\  + A_{y}B_{x}(-\hat{k}) + A_{y}B_{y}(0) + A_{y}B_{z}(+\hat{i}) \\  + A_{z}B_{x}(+\hat{j}) + A_{z}B_{y}(- \hat{i}) + A_{z}B_{z}(0)$$
+The above simplifies to
+$$\vec{A} \times \vec{B} = (A_{y}B_{z} - A_{z}B_{y})\; \hat{i} + (A_{z}B_{x} - A_{x}B_{z})\; \hat{j} + (A_{x}B_{y} - A_{y}B_{x})\; \hat{k}$$
+However, instead of using the above expression as a framework for computing vector products, we can actually use other simpler methods such as computing determinants of matrices as we will do in class.
+\subsubsection*{Questions}
+\begin{enumerate}
+	\item Which of the following is a vector: a person’s height, the altitude on Mt. Everest, the velocity of a fly, the age of Earth, the boiling point of water, the cost of a book, Earth’s population, or the acceleration of gravity?
+	\item Give a specific example of a vector, stating its magnitude, units, and direction.
+	\item If the cross product of two vectors vanishes, what can you say about their directions? What if it was the dot product?
+	\item Is it possible to add a scalar quantity to a vector quantity?
+	\item Find the angles that vector  $\vec{V}$ =(4$\hat{i}$-5$\hat{j}$+$\hat{k}$)m makes with the x, y, and z axes.
+\end{enumerate}
+\end{document}	

@@ -1,0 +1,1041 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.10)  6 MAR 2023 23:54
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./magnetic_fields_forces.tex
+(magnetic_fields_forces.tex
+LaTeX2e <2022-11-01>
+L3 programming layer <2022-11-02>
+(/home/aaron/.miktex/texmfs/install/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(/home/aaron/.miktex/texmfs/install/tex/latex/base/size10.clo
+File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen140
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/home/aaron/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen141
+))
+(/home/aaron/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen142
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count193
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count194
+\leftroot@=\count195
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count196
+\DOTSCASE@=\count197
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen143
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count198
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count199
+\dotsspace@=\muskip16
+\c@parentequation=\count266
+\dspbrk@lvl=\count267
+\tag@help=\toks19
+\row@=\count268
+\column@=\count269
+\maxfields@=\count270
+\andhelp@=\toks20
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks21
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip52
+\thm@postskip=\skip53
+\thm@headsep=\skip54
+\dth@everypar=\toks28
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/amsmath/amscd.sty
+Package: amscd 2017/04/14 v2.1 AMS Commutative Diagrams
+\athelp@=\toks29
+\minaw@=\dimen150
+\bigaw@=\dimen151
+\minCDarrowwidth=\dimen152
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip55
+\multirow@cntb=\count271
+\multirow@dima=\skip56
+\bigstrutjot=\dimen153
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen154
+\lightrulewidth=\dimen155
+\cmidrulewidth=\dimen156
+\belowrulesep=\dimen157
+\belowbottomsep=\dimen158
+\aboverulesep=\dimen159
+\abovetopsep=\dimen160
+\cmidrulesep=\dimen161
+\cmidrulekern=\dimen162
+\defaultaddspace=\dimen163
+\@cmidla=\count272
+\@cmidlb=\count273
+\@aboverulesep=\dimen164
+\@belowrulesep=\dimen165
+\@thisruleclass=\count274
+\@lastruleclass=\count275
+\@thisrulewidth=\dimen166
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\enitkv@toks@=\toks30
+\labelindent=\skip57
+\enit@outerparindent=\dimen167
+\enit@toks=\toks31
+\enit@inbox=\box53
+\enit@count@id=\count276
+\enitdp@description=\count277
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip58
+\f@nch@O@elh=\skip59
+\f@nch@O@erh=\skip60
+\f@nch@O@olh=\skip61
+\f@nch@O@orh=\skip62
+\f@nch@O@elf=\skip63
+\f@nch@O@erf=\skip64
+\f@nch@O@olf=\skip65
+\f@nch@O@orf=\skip66
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/jknappen/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen168
+\WF@size=\dimen169
+\c@WF@wrappedlines=\count278
+\WF@box=\box54
+\WF@everypar=\toks32
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/local/share/miktex-texmf/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count279
+\calc@Bcount=\count280
+\calc@Adimen=\dimen170
+\calc@Bdimen=\dimen171
+\calc@Askip=\skip67
+\calc@Bskip=\skip68
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count281
+\calc@Cskip=\skip69
+)
+(/usr/local/share/miktex-texmf/tex/latex/tools/multicol.sty
+Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
+\c@tracingmulticols=\count282
+\mult@box=\box55
+\multicol@leftmargin=\dimen172
+\c@unbalance=\count283
+\c@collectmore=\count284
+\doublecol@number=\count285
+\multicoltolerance=\count286
+\multicolpretolerance=\count287
+\full@width=\dimen173
+\page@free=\dimen174
+\premulticols=\dimen175
+\postmulticols=\dimen176
+\multicolsep=\skip70
+\multicolbaselineskip=\skip71
+\partial@page=\box56
+\last@line=\box57
+\maxbalancingoverflow=\dimen177
+\mult@rightbox=\box58
+\mult@grightbox=\box59
+\mult@firstbox=\box60
+\mult@gfirstbox=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\c@minrows=\count288
+\c@columnbadness=\count289
+\c@finalcolumnbadness=\count290
+\last@try=\dimen178
+\multicolovershoot=\dimen179
+\multicolundershoot=\dimen180
+\mult@nat@firstbox=\box98
+\colbreak@box=\box99
+\mc@col@check@num=\count291
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/ieeetran/IEEEtrantools.sty
+Package: IEEEtrantools 2015/08/26 V1.5 by Michael Shell
+
+-- See the "IEEEtrantools_doc.txt" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/tools/
+\@IEEEtrantmpdimenA=\dimen181
+\@IEEEtrantmpdimenB=\dimen182
+\@IEEEtrantmpdimenC=\dimen183
+\@IEEEtrantmpcountA=\count292
+\@IEEEtrantmpcountB=\count293
+\@IEEEtrantmpcountC=\count294
+\@IEEEtrantmptoksA=\toks33
+\IEEEnormaljot=\dimen184
+\IEEEquantizedlength=\dimen185
+\IEEEquantizedlengthdiff=\dimen186
+\IEEEquantizedtextheightdiff=\dimen187
+\IEEEilabelindentA=\dimen188
+\IEEEilabelindentB=\dimen189
+\IEEEilabelindent=\dimen190
+\IEEEelabelindent=\dimen191
+\IEEEdlabelindent=\dimen192
+\IEEElabelindent=\dimen193
+\IEEEiednormlabelsep=\dimen194
+\IEEEiedmathlabelsep=\dimen195
+\IEEEiedtopsep=\skip72
+\c@IEEEsubequation=\count295
+\@IEEEeqnnumcols=\count296
+\@IEEEeqncolcnt=\count297
+\@IEEEsubeqnnumrollback=\count298
+\IEEEPARstartletwidth=\dimen196
+) (/home/aaron/.miktex/texmfs/install/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip73
+\fb@frw=\dimen197
+\fb@frh=\dimen198
+\FrameRule=\dimen199
+\FrameSep=\dimen256
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgf.sty
+(/home/aaron/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks34
+\pgfutil@tempdima=\dimen257
+\pgfutil@tempdimb=\dimen258
+
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box100
+) (/home/aaron/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgfcore.sty
+(/home/aaron/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks35
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen259
+\Gin@req@width=\dimen260
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks36
+\pgfkeys@temptoks=\toks37
+
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks38
+))
+\pgf@x=\dimen261
+\pgf@y=\dimen262
+\pgf@xa=\dimen263
+\pgf@ya=\dimen264
+\pgf@xb=\dimen265
+\pgf@yb=\dimen266
+\pgf@xc=\dimen267
+\pgf@yc=\dimen268
+\pgf@xd=\dimen269
+\pgf@yd=\dimen270
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count299
+\c@pgf@countb=\count300
+\c@pgf@countc=\count301
+\c@pgf@countd=\count302
+\t@pgf@toka=\toks39
+\t@pgf@tokb=\toks40
+\t@pgf@tokc=\toks41
+\pgf@sys@id@count=\count303
+
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count304
+\pgfsyssoftpath@bigbuffer@items=\count305
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/home/aaron/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen271
+\pgfmath@count=\count306
+\pgfmath@box=\box101
+\pgfmath@toks=\toks42
+\pgfmath@stack@operand=\toks43
+\pgfmath@stack@operation=\toks44
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count307
+)) (/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfint.code.tex)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen272
+\pgf@picmaxx=\dimen273
+\pgf@picminy=\dimen274
+\pgf@picmaxy=\dimen275
+\pgf@pathminx=\dimen276
+\pgf@pathmaxx=\dimen277
+\pgf@pathminy=\dimen278
+\pgf@pathmaxy=\dimen279
+\pgf@xx=\dimen280
+\pgf@xy=\dimen281
+\pgf@yx=\dimen282
+\pgf@yy=\dimen283
+\pgf@zx=\dimen284
+\pgf@zy=\dimen285
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen286
+\pgf@path@lasty=\dimen287
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen288
+\pgf@shorten@start@additional=\dimen289
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box102
+\pgf@hbox=\box103
+\pgf@layerbox@main=\box104
+\pgf@picture@serial@count=\count308
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen290
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen291
+\pgf@pt@y=\dimen292
+\pgf@pt@temp=\dimen293
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen294
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen295
+\pgf@sys@shading@range@num=\count309
+\pgf@shadingcount=\count310
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box105
+))
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box106
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen296
+\pgf@nodesepend=\dimen297
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/local/share/miktex-texmf/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks45
+\verbatim@line=\toks46
+\verbatim@in@stream=\read3
+)
+(/usr/local/share/miktex-texmf/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(/usr/local/share/miktex-texmf/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count311
+)
+\tcb@titlebox=\box107
+\tcb@upperbox=\box108
+\tcb@lowerbox=\box109
+\tcb@phantombox=\box110
+\c@tcbbreakpart=\count312
+\c@tcblayer=\count313
+\c@tcolorbox@number=\count314
+\tcb@temp=\box111
+\tcb@temp=\box112
+\tcb@temp=\box113
+\tcb@temp=\box114
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '5.1.1'
+\c@tcbrastercolumn=\count315
+\c@tcbrasterrow=\count316
+\c@tcbrasternum=\count317
+\c@tcbraster=\count318
+) (/home/aaron/.miktex/texmfs/install/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '5.1.1'
+(/home/aaron/.miktex/texmfs/install/tex/latex/pgf/frontendlayer/tikz.sty
+(/home/aaron/.miktex/texmfs/install/tex/latex/pgf/utilities/pgffor.sty
+(/home/aaron/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfkeys.sty
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/home/aaron/.miktex/texmfs/install/tex/latex/pgf/math/pgfmath.sty
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex))
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen298
+\pgffor@skip=\dimen299
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
+))
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count319
+\pgfplotmarksize=\dimen300
+)
+\tikz@lastx=\dimen301
+\tikz@lasty=\dimen302
+\tikz@lastxsaved=\dimen303
+\tikz@lastysaved=\dimen304
+\tikz@lastmovetox=\dimen305
+\tikz@lastmovetoy=\dimen306
+\tikzleveldistance=\dimen307
+\tikzsiblingdistance=\dimen308
+\tikz@figbox=\box115
+\tikz@figbox@bg=\box116
+\tikz@tempbox=\box117
+\tikz@tempbox@bg=\box118
+\tikztreelevel=\count320
+\tikznumberofchildren=\count321
+\tikznumberofcurrentchild=\count322
+\tikz@fig@count=\count323
+
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count324
+\pgfmatrixcurrentcolumn=\count325
+\pgf@matrix@numberofcolumns=\count326
+)
+\tikz@expandcount=\count327
+
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+\tcb@waterbox=\box119
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '5.1.1'
+))
+(/home/aaron/.miktex/texmfs/install/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '5.1.1'
+(/home/aaron/.miktex/texmfs/install/tex/latex/pdfcol/pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+
+(/home/aaron/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/home/aaron/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/local/share/miktex-texmf/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box120
+\tcb@totalupperbox=\box121
+\tcb@totallowerbox=\box122
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '5.1.1'
+) (/home/aaron/.miktex/texmfs/install/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '5.1.1'
+) (/home/aaron/.miktex/texmfs/install/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '5.1.1'
+\tcbfitdim=\dimen309
+\tcb@lowerfitdim=\dimen310
+\tcb@upperfitdim=\dimen311
+\tcb@cur@hbadness=\count328
+)
+(/home/aaron/.miktex/texmfs/install/tex/latex/tcolorbox/tcblistingsutf8.code.te
+x
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '5.1.1'
+(/home/aaron/.miktex/texmfs/install/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '5.1.1'
+(/usr/local/share/miktex-texmf/tex/latex/listings/listings.sty
+\lst@mode=\count329
+\lst@gtempboxa=\box123
+\lst@token=\toks49
+\lst@length=\count330
+\lst@currlwidth=\dimen312
+\lst@column=\count331
+\lst@pos=\count332
+\lst@lostspace=\dimen313
+\lst@width=\dimen314
+\lst@newlines=\count333
+\lst@lineno=\count334
+\lst@maxwidth=\dimen315
+
+(/usr/local/share/miktex-texmf/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count335
+\lst@skipnumbers=\count336
+\lst@framebox=\box124
+)
+(/usr/local/share/miktex-texmf/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/tcolorbox/tcblistingscore.code.te
+x
+Library (tcolorbox): 'tcblistingscore.code.tex' version '5.1.1'
+(/home/aaron/.miktex/texmfs/install/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '5.1.1'
+(/home/aaron/.miktex/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/share/miktex-texmf/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+))
+\c@tcblisting=\count337
+))
+(/home/aaron/.miktex/texmfs/install/tex/latex/listingsutf8/listingsutf8.sty
+Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
+
+(/home/aaron/.miktex/texmfs/install/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+
+(/home/aaron/.miktex/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+))))
+(/home/aaron/.miktex/texmfs/install/tex/latex/tcolorbox/tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '5.1.1'
+) (/home/aaron/.miktex/texmfs/install/tex/latex/tcolorbox/tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '5.1.1'
+) (/home/aaron/.miktex/texmfs/install/tex/latex/tcolorbox/tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '5.1.1'
+
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/home/aaron/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryfadings
+.code.tex
+File: pgflibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/home/aaron/.miktex/texmfs/install/tex/latex/tcolorbox/tcbposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '5.1.1'
+)) (/home/aaron/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/share/miktex-texmf/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count338
+\Gm@cntv=\count339
+\c@Gm@tempcnt=\count340
+\Gm@bindingoffset=\dimen316
+\Gm@wd@mp=\dimen317
+\Gm@odd@mp=\dimen318
+\Gm@even@mp=\dimen319
+\Gm@layoutwidth=\dimen320
+\Gm@layoutheight=\dimen321
+\Gm@layouthoffset=\dimen322
+\Gm@layoutvoffset=\dimen323
+\Gm@dimlist=\toks50
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
+(/home/aaron/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count341
+\l__pdf_internal_box=\box125
+)
+
+LaTeX Warning: Unused global option(s):
+    [9pt].
+
+(magnetic_fields_forces.aux)
+\openout1 = `magnetic_fields_forces.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+
+(/home/aaron/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count342
+\scratchdimen=\dimen324
+\scratchbox=\box126
+\nofMPsegments=\count343
+\nofMParguments=\count344
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count345
+\MPscratchDim=\dimen325
+\MPnumerator=\count346
+\makeMPintoPDFobject=\count347
+\everyMPtoPDFconversion=\toks52
+) (/home/aaron/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\c@lstlisting=\count348
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69684pt, 56.90553pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23582pt, 56.90552pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69684pt
+* \textheight=731.23582pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 27
+.
+
+(/home/aaron/.miktex/texmfs/install/tex/latex/jknappen/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+<magnetic_field_bar.png, id=40, 155.3805pt x 136.1085pt>
+File: magnetic_field_bar.png Graphic file (type png)
+<use magnetic_field_bar.png>
+Package pdftex.def Info: magnetic_field_bar.png  used on input line 38.
+(pdftex.def)             Requested size: 77.69005pt x 68.05408pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+<magnetic_field_patterns.png, id=42, 386.6445pt x 189.70876pt>
+File: magnetic_field_patterns.png Graphic file (type png)
+<use magnetic_field_patterns.png>
+Package pdftex.def Info: magnetic_field_patterns.png  used on input line 44.
+(pdftex.def)             Requested size: 193.32178pt x 94.85414pt.
+[1
+
+{/home/aaron/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map} <./magnetic_field
+_bar.png> <./magnetic_field_patterns.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 56--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
+
+ []
+
+[2]
+<charged_circular_path.jpg, id=64, 552.0625pt x 394.47375pt>
+File: charged_circular_path.jpg Graphic file (type jpg)
+<use charged_circular_path.jpg>
+Package pdftex.def Info: charged_circular_path.jpg  used on input line 72.
+(pdftex.def)             Requested size: 165.62003pt x 118.34303pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
+
+ []
+
+[3 <./charged_circular_path.jpg>]
+<rhr.jpg, id=70, 270.2898pt x 129.1224pt>
+File: rhr.jpg Graphic file (type jpg)
+<use rhr.jpg>
+Package pdftex.def Info: rhr.jpg  used on input line 99.
+(pdftex.def)             Requested size: 162.17513pt x 77.47403pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+<two_wires.jpg, id=72, 264.99pt x 164.2938pt>
+File: two_wires.jpg Graphic file (type jpg)
+<use two_wires.jpg>
+Package pdftex.def Info: two_wires.jpg  used on input line 111.
+(pdftex.def)             Requested size: 185.49173pt x 115.00485pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--120
+
+ []
+
+[4 <./rhr.jpg> <./two_wires.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--135
+
+ []
+
+[5] (magnetic_fields_forces.aux) ) 
+Here is how much of TeX's memory you used:
+ 22471 strings out of 477216
+ 478808 string characters out of 2825806
+ 835782 words of memory out of 3000000
+ 43300 multiletter control sequences out of 15000+600000
+ 478792 words of font info for 67 fonts, out of 8000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 99i,6n,104p,1025b,261s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{/home/aaron/.miktex/texmfs/install/fonts/enc
+/dvips/cm-super/cm-super-ts1.enc}</home/aaron/.miktex/texmfs/install/fonts/type
+1/public/amsfonts/cm/cmbx10.pfb></home/aaron/.miktex/texmfs/install/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb></home/aaron/.miktex/texmfs/install/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb></home/aaron/.miktex/texmfs/install/fonts/type1/p
+ublic/amsfonts/cm/cmmi7.pfb></home/aaron/.miktex/texmfs/install/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></home/aaron/.miktex/texmfs/install/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb></home/aaron/.miktex/texmfs/install/fonts/type1/public/
+amsfonts/cm/cmr17.pfb></home/aaron/.miktex/texmfs/install/fonts/type1/public/am
+sfonts/cm/cmr7.pfb></home/aaron/.miktex/texmfs/install/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></home/aaron/.miktex/texmfs/install/fonts/type1/public/amsfon
+ts/cm/cmsy7.pfb></home/aaron/.miktex/texmfs/install/fonts/type1/public/amsfonts
+/cm/cmti10.pfb></home/aaron/.miktex/texmfs/install/fonts/type1/public/cm-super/
+sfrm1000.pfb>
+Output written on magnetic_fields_forces.pdf (5 pages, 593959 bytes).
+PDF statistics:
+ 132 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
+

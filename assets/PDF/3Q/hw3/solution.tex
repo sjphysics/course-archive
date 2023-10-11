@@ -1,0 +1,105 @@
+\documentclass[9pt,addpoints]{exam}
+\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{Homework 3 Solution}{}{Page \thepage\ of \numpages}
+\runningheadrule
+\author{Aaron GK}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=10mm,
+	right=10mm,
+	bottom=5mm,
+	top=5mm,
+}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+
+\begin{document}
+	\title{St John Baptist De La Salle Catholic School, Addis Ababa\\
+		\large Homework 3 Solution \\
+		3rd Quarter}
+	\maketitle
+	\begin{center}
+		\fbox{\fbox{\parbox{6in}{\centering
+					Notes, and use of other aids is allowed.  Read all directions carefully and write your answers in the space provided.  To receive full credit, you must show all of your work. \textbf{Cheating or indications of cheating and similar answers will be punished accordingly}. 
+		}}}
+		\subsubsection*{Information}
+		\begin{itemize}
+			\item The homework is due on \textbf{Friday}, \textbf{March 3}.
+			\item You should Work on it \textbf{in groups} and consult me if you have any questions. Cheating within groups is unacceptable.
+			\item For purposes of neatness and simplicity of grading, you should do the homework on an \textbf{A-4 paper}.
+		\end{itemize}
+	\end{center}
+	\begin{center}
+		\subsection*{Questions}
+	\end{center}
+	
+	\begin{questions}
+		\question What is the force and torque on a square-shaped 6A current carrying loop of conducting wire that has an area of 0.0064$m^2$ and surrounded by a permanent magnet with a field strength of B = $3.0\times10^5$T that is tilted at 30$^0$ to the loop? \\ \textbf{Answer}: \\
+		$$\tau=IAB\cos\alpha$$
+		$$\tau=6A\times0.0064m^2\times3.0\times10^{5}T\times\cos30^0\textit{ (question: Why did we use }\cos\textit{ here?)}$$
+		$$\tau=5760\sqrt{3}Nm$$
+		Calculating the force is a bit trickier, however. Because, there are 4 sides to the square the the force experienced by each side is different. What we do know for sure is that the forces cancel out on the loop and the net force is 0, but, it doesn't mean the sides won't experience any force. For simplicity let's assume the loop is on the XY plane, we can think of the magnetic field as a 2D vector with X and Z components. In that case, we have the following 
+		$$F=ILB\sin\theta$$
+		$$F=6A\times0.08m\times3.0\times10^5T\sin30^0$$
+		$$F=7.2\times10^{4}N$$
+		However, the forces on opposite segments are in opposite directions, which result in a net zero force.
+		\question If a charged particle moves in a straight line through some region of space, can you say that the magnetic field in that region is necessarily zero?\\ \textbf{Answer}: \\
+		We can say a few things: \begin{itemize}
+			\item There is no force acting on the object. The force could be 0 for many reasons: either the magnetic field is 0 or the charge is neutral or maybe the charge is moving parallel to the magnetic field. 
+			\item A force is acting in such a way that the charge follows its original path. There can be a force acting on the object such that the object continues moving along its original path, but that force is not magnetic force because magnetic force is always perpendicular to the motion of the charge.
+		\end{itemize}
+		\question What is the angle between the current carrying wire and the magnetic field when the force exerted on the wire is half of the maximum force possible? \\ \textbf{Answer}: \\
+		$$F=ILB\sin\theta$$
+		But $F$ is half the maximum force here. The maximum force on a current carrying wire is when the wire is perpendicular to the field and that is $F_{max}=ILB$. The given situation is that $F=\dfrac{1}{2}F_{max}$.
+		$$F=\dfrac{1}{2}F_{max}$$
+		$$ILB\sin\theta=\dfrac{1}{2}ILB$$
+		$$ILB\sin\theta=\dfrac{1}{2}ILB$$
+		$$\sin\theta=\dfrac{1}{2}$$
+		$$\sin\theta=\dfrac{1}{2}\implies \theta=\sin^{-1}\left(\dfrac{1}{2}\right)$$
+		$$\theta=\dfrac{\pi}{6}$$
+		\subsection*{Advanced Problems}
+		\question Find the charge to mass ratio of a charge moving if it is moving at a speed of $v = 5.0\times10^3 m/s$ in a magnetic field of 0.08G and it has the same trajectory as an electron in the same magnetic field. \\ \textbf{Answer}: \\
+		First, we need to calculate the radius of the trajectory of the electron since it is the same as the charge's.
+		$$r_e=\dfrac{m_ev}{q_eB}$$
+		For the charge of mass \textbf{m} \& charge \textbf{q},its radius is:
+		$$r_e=\dfrac{mv}{qB}$$
+		However, we know that the the trajectories are the same, thus $r=r_e$.
+		$$r=r_e\implies\dfrac{mv}{qB}=\dfrac{m_ev}{q_eB}$$
+		$$\dfrac{m}{q}=\dfrac{m_e}{q_e}$$
+		Rearranging the above, we get the charge to mass ratio of the charge to be equal to that of the electron's.
+		$$\dfrac{q}{m}=\dfrac{q_e}{m_e}=\dfrac{1.6\times10^{-19}C}{9.11\times10^{-31}kg}$$
+		\question What is the magnetic field 2cm away due to a straight current carrying wire made of Manganese if the wire has a volume $27cm^3$ and length 3cm, if it is switched on for 5 seconds?(Hint: \textit{calculate the electron density of Manganese to find the current})\\ \textbf{Answer}: \\
+		First, we need to calculate the current and express it in terms of the electron density. To calculate the electron density;
+		$$n=\dfrac{n_e}{V}$$
+		However, for a Manganese atom, there are two free electrons that are able to conduct electricity. Thus, the total number of charge carriers is the product of the free electron per atom and the total number of atoms.
+		$$n=\dfrac{2\times n_{atoms}}{V}$$
+		The total number of atoms is the number of moles and the Avogadro's number.
+		$$n=\dfrac{2\times n_{mol}\times N_{A}}{V}$$
+		$$n=\dfrac{2\times\dfrac{m}{M}\times N_{A}}{V}$$	
+		$$n=\dfrac{2\times\rho\times N_{A}}{M}$$
+		The current is given by:
+		$$I=nAev\implies\dfrac{2\times\rho\times N_{A}}{M}Aev$$
+		$$I=\dfrac{2\times\rho\times N_{A}}{M}Ae\dfrac{l}{t}$$
+		$$I=\dfrac{2\times\rho\times V e N_{A}}{M t}$$
+		However, the magnitude of the magnetic field due to a straight current carrying wire is given by:
+		$$B=\dfrac{\mu_0I}{2\pi r}$$
+		$$B=\dfrac{\mu_0(\dfrac{2\times\rho\times V e N_{A}}{M t})}{2\pi r}$$
+		$$B=\dfrac{\mu_0\times\rho\times V e N_{A}}{M t\pi r}$$
+		Now that we have got an expression for the magnetic field in terms of the other quantities, we can work on the magnetic field:
+		$$B=\dfrac{4\pi\times10^{-7}\times3.7\times10^{3}\times27\times10^{-6}\times1.6\times10^{-19}\times6.023\times10^{23}}{55\times10^{-3} \times5\times\pi\times2\times10^{-2}}T$$
+	\end{questions}		
+\end{document}

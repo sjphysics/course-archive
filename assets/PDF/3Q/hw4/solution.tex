@@ -1,0 +1,95 @@
+\documentclass[9pt,addpoints]{exam}
+\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{Homework 4 Solution}{}{Page \thepage\ of \numpages}
+\runningheadrule
+\author{Aaron GK}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=10mm,
+	right=10mm,
+	bottom=5mm,
+	top=5mm,
+}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+
+\begin{document}
+	\title{St John Baptist De La Salle Catholic School, Addis Ababa\\
+		\large Homework 4 Solution\\
+		3rd Quarter}
+	\maketitle
+	\begin{center}
+		\fbox{\fbox{\parbox{6in}{\centering
+					Notes, and use of other aids is allowed.  Read all directions carefully and write your answers in the space provided.  To receive full credit, you must show all of your work. \textbf{Cheating or indications of cheating and similar answers will be punished accordingly}. 
+		}}}
+		\subsubsection*{Information}
+		\begin{itemize}
+			\item The homework is due on \textbf{Wednesday}, \textbf{March 15}.
+			\item You should Work on it \textbf{in groups} and consult me if you have any questions. Cheating within groups is unacceptable.
+			\item For purposes of neatness and simplicity of grading, you should do the homework on an \textbf{A-4 paper}.
+		\end{itemize}
+	\end{center}
+	\begin{center}
+		\subsection*{Questions}
+	\end{center}
+	\begin{questions}
+		\question What are ferromagnetic materials? What are some common ferromagnetic materials? \\ \textbf{Answer:} \\
+		Ferromagnetic materials are substances that are able to be magnetized. Common examples include iron, cobalt, nickel and some rare metals like gadolinium and neodymium.
+		\question We have seen that charges and magnets have similar properties. How is a charge similar to and different from a magnet?\\ \textbf{Answer:} \\
+		They are similar in that both created fields and are acted up on by fields. Also similar in that when they are of opposite parities, they attract while the similar parities repel. The main difference is that specific charges(positive or negative) can be found alone while magnetic monopoles are nonexistent. Another important difference is that magnetic fields are closed loops while electric fields don't necessarily need to be closed loops.
+		\question If a current carrying wire of 2A and length 3m is in a region of space that is perpendicular to a magnetic field of 3T, what is the maximum force on the wire? What about the minimum force?\\ \textbf{Answer:} \\
+		$$F_{max}=ILB\sin\theta=ILB\text{  when }\theta=\dfrac{\pi}{2}$$
+		$$F_{max}=2A\times3T\times3m=18N$$
+		$$F_{max}=ILB\sin\theta=0\text{  when }\theta=0$$
+		\question An electron and a proton are shot with the same speed of $3\times10^7m/s$ perpendicular to the magnetic field in question 3. What are the magnitudes of the forces on the electron and the proton? What about the radius of the trajectories by the electron and the proton?\\ \textbf{Answer:} \\
+		Since the charges of the proton and electron are the same, the magnitude of the force they experience in the same magnetic field while moving at the same speed is identical.
+		$$F=qvB\sin\theta$$
+		$$F=1.6\times10^{-19}C\times3\times10^7m/s\times3T$$
+		$$F=1.44\times10^{-11}N$$
+		Since their masses are different, however, the radius of the trajectories of the electron and proton are very different.
+		$$r_e=\dfrac{m_ev}{qB}$$
+		$$r_e=\dfrac{9.11\times10^{-31}kg\times3\times10^7m/s}{1.6\times10^{-19}3T}$$
+		$$r_p=\dfrac{m_pv}{qB}$$
+		$$r_p=\dfrac{1.673\times10^{-27}kg\times3\times10^7m/s}{1.6\times10^{-19}3T}$$
+		\question A current carrying wire that is carrying a current of 4A is going into the page. What is the magnetic field strength due to the wire 2cm vertically above the wire?(Both B and $\hat{B}$)\\ \textbf{Answer:} \\
+		$$B=\dfrac{\mu_0 I}{2\pi r}$$
+		$$B=\dfrac{4\pi\times10^{-7}\times4A}{2\pi\times2\times10^{-2}}T=4\times10^{-5}T$$
+		For the direction we use RHR. The magnetic field by a current carrying wire going into the page is clockwise, but for a point vertically above the wire, the magnetic field is going to the right. So,
+		$$\hat{B}=\hat{i}$$
+		$$\vec{B}=(4\times10^{-5}\hat{i})T$$
+		\question For two wires both going out of the page, show that the two wires attract. \\ \textbf{Answer} \\
+		
+		$$\odot_A<-----r------>\odot_B$$
+	
+		To show that the wires attract, let's calculate the forces on each wire due to the other:
+		$$\vec{F}_{AB}=I_B\vec{l}_B\times \vec{B}_A$$
+		$$\vec{F}_{AB}=\hat{k}\times\hat{j}$$
+		$$\vec{F}_{AB}=-\hat{i}$$
+		The force on wire B from wire A is to the left.
+		$$\vec{F}_{BA}=I_B\vec{l}_B\times \vec{B}_A$$
+		$$\vec{F}_{BA}=\hat{k}\times-\hat{j}$$
+		$$\vec{F}_{BA}=\hat{i}$$
+		The force on wire B from wire A is to the right. \\ \\
+		Thus, we can see that the wires attract.
+		\subsection*{Advanced Problems}
+		\question Using Ampere's Law, show that the magnetic field of a solenoid is given by $B=\mu_0nI$ such that $n$ is the number of turns in the solenoid per unit length. 	\\ \textbf{Answer} \\
+		$$\oint\vec{B}\cdot d\vec{S}=\mu_0I_{enc}$$
+		$$Bl=\mu_0(NI)$$
+		$$B=\dfrac{\mu_0(NI)}{l}$$
+		$$B=\mu_0nI$$
+	\end{questions}		
+\end{document}

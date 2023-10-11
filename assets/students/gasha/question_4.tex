@@ -1,0 +1,89 @@
+\documentclass[9pt,addpoints]{exam}
+\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheadrule
+\author{Gasha Abdisa}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=10mm,
+	right=10mm,
+	bottom=5mm,
+	top=5mm,
+}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+\begin{document}
+	\title{Assignment}
+	\maketitle
+	\textbf{Question 4 Solution}\\ \\
+	\textbf{Part a} \\ \\
+	For an electron with rest energy of 1 ev:
+	$$\lambda=\dfrac{h}{p}=\dfrac{h}{\sqrt{2km}}$$
+	$$\lambda=\dfrac{6.26\times10^{-34}Js}{\sqrt{2\times1ev\times511Kev/c^2}}$$
+	$$\lambda=1.23nm$$
+	\textbf{Part b} \\ \\
+	We need to first find the momentum of the benzene molecule:
+	$$p=mv=78g/mol\times1m/s=1.295\times10^{-25}kgm/s$$
+	The de Broglie wave length is given by:
+	$$\lambda=\dfrac{h}{p}=\dfrac{6.26\times10^{-34}Js}{1.295\times10^{-25}kgm/s}$$
+	$$\lambda=0.512nm$$
+	\textbf{Question 5 Solution}\\ \\
+	We know that uncertainty principle is given by:
+	$$\Delta x\times\Delta p=\dfrac{h}{4\pi}$$
+	But, we also know, from de Broglie's law, that:
+	$$\lambda=\dfrac{h}{p}\implies \dfrac{\Delta p}{p}=\dfrac{\Delta\lambda}{\lambda}$$
+	$$\Delta p=p\dfrac{\Delta\lambda}{\lambda}=\dfrac{h}{\lambda}\dfrac{\Delta\lambda}{\lambda}=\dfrac{h\Delta\lambda}{\lambda^2}$$
+	$$\Delta p=\dfrac{\Delta\lambda h}{\lambda^2}=\dfrac{10^{-6}\times6.626\times10^{-34}Js}{(10^{-10}m)^2}=6.626\times10^{-20}kgm/s$$
+	Which means,
+	$$\Delta x=\dfrac{h}{\Delta p\times4\pi}=\dfrac{6.62\times10^{-34}Js}{6.62\times10^{-20}kgm/s\times4\pi}$$
+	$$\Delta x=\dfrac{10^{-14}}{4\pi}m$$
+	\textbf{Question 10 Solution}\\ \\	
+	\textbf{Part a} \\ \\
+	The zero point energy is:
+	$$E=h\omega(0+\frac{1}{2})=\dfrac{h\omega}{2}$$
+	$\omega$ is given as follows:
+	$$\omega=\sqrt{\dfrac{K}{\mu}}$$
+	$$\omega=\sqrt{\dfrac{480.6Nm^{-1}}{6.053\times10^{-25}kg}}=\sqrt{7.94\times10^{24}/s^2}$$
+	$$\omega=2.82\times10^{12}/s$$
+	We can now calculate the energy since we have $\omega$
+	$$E=\dfrac{h\omega}{2}$$
+	$$E=\dfrac{6.626\times10^{-34}Js\times2.82\times10^{12}/s}{2}$$
+	$$E=9.34\times10^{-22}J$$
+	\textbf{Part b} \\ \\
+	The zero point energy is:
+	$$E=h\omega(0+\frac{1}{2})=\dfrac{h\omega}{2}$$
+	$\omega$ is given as follows:
+	$$\omega=\sqrt{\dfrac{K}{\mu}}$$
+	$$\omega=\sqrt{\dfrac{480.6Nm^{-1}}{0.036458kg}}=\sqrt{13182.2/s^2}=114.8/s$$
+	We can now calculate the energy since we have $\omega$
+	$$E=\dfrac{h\omega}{2}$$
+	$$E=\dfrac{6.626\times10^{-34}Js\times114.8/s}{2}$$
+	$$E=\dfrac{7.61\times10^{-32}J}{2}$$
+	$$E=3.80\times10^{-32}J$$
+	\textbf{Question 11 Solution}\\ \\
+	The transmission coefficient is given as follows:
+	$$T\approxeq e^{-2bL}\text{ such that }b=\sqrt{\dfrac{8\pi^2m(U_b-E)}{h^2}}$$
+	We first need to calculate b:
+	$$b=\sqrt{\dfrac{8\pi^2m(U_b-E)}{h^2}}=\sqrt{\dfrac{8\pi^2\times9.11\times10^{-31}kg(5ev-1ev)}{(6.626\times10^{-34}Js)^2}}$$
+	$$b=\sqrt{\dfrac{8\pi^2\times9.11\times10^{-31}kg(4ev)}{(6.626\times10^{-34}Js)^2}}$$
+	$$b=\sqrt{1.05\times10^{20}/m^2}= 1.025\times10^{10}/m$$
+	We can now find the transmission coefficient:
+	$$T\approxeq e^{-2bL}$$
+	$$T\approxeq e^{-2\times1.025\times10^{10}/m\times2\times10^{-9}m}$$
+	$$T\approxeq e^{-40.99}$$
+	$$T\approxeq 1.59\times10^{-18}$$
+	\textbf{Question 12 Solution}\\ \\	
+	
+\end{document}

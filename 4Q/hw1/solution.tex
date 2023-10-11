@@ -1,0 +1,88 @@
+\documentclass[11pt,addpoints]{exam}
+\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{Homework 1}{}{Page \thepage\ of \numpages}
+\runningheadrule
+\author{Aaron GK}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=15mm,
+	right=15mm,
+	bottom=20mm,
+	top=15mm,
+}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+
+\begin{document}
+	\title{St John Baptist De La Salle Catholic School, Addis Ababa\\
+		\large Homework 1 \\
+		4th Quarter}
+	\maketitle
+	\begin{center}
+		\fbox{\fbox{\parbox{6in}{\centering
+					Notes, and use of other aids is allowed.  Read all directions carefully and write your answers in the space provided.  To receive full credit, you must show all of your work. \textbf{Cheating or indications of cheating and similar answers will be punished accordingly}. 
+		}}}
+		\subsubsection*{Information}
+		\begin{itemize}
+			\item The homework is due primarily on \textbf{Friday}, \textbf{May 19th}. You can submit it on \textbf{Monday}, \textbf{May 22nd}, but the Advanced Problems won't count.
+			\item You should Work on it \textbf{in groups} and consult me if you have any questions. As I have reiterated multiple times, cheating between groups will have a serious consequence.
+			\item For purposes of neatness and simplicity of grading, you should do the homework on an \textbf{A-4 paper}.
+		\end{itemize}
+	\end{center}
+	\begin{center}
+		\subsection*{Questions}
+	\end{center}
+	
+	\begin{questions}
+		\question If we are using a microwave microscope, what is the finest detail that we are able to see using the microscope?
+		\\ \\ 
+		\textbf{Answer:} The detail we can observe depends on the wavelength of light we are using to observe a specific light. The lower the wavelength, the finer the details we can observe. For microwaves, the lowest wavelength is about 1mm. Thus, the smallest detail we can see is about 1mm.
+		\question When light is used to view an object, the detail it can show is limited according its wavelength. The smaller the wavelength, the more detail we can get from the object. What is the smallest detail visible by a light whose frequency is yellow light($\lambda=580nm$)? 
+		\\ \\ 
+		\textbf{Answer:} This question is similar to the one above, if we are using yellow light to observe matter, the smallest object we can detect is $580nm$.
+		\question Some radar systems detect the size and shape of objects such as aircraft and geological terrain. Approximately what is the smallest observable detail utilizing 500-MHz radar? Would we be able to observe a small bird with a wingspan of 0.4m?
+		\\ \\ 
+		\textbf{Answer:} As we have seen in the two questions above, we would first need to calculate the wavelength of such light.
+		$$\lambda=\dfrac{c}{f}=\dfrac{3\times10^{8}m/s}{5\times10^{8}Hz}=0.6m$$
+		Now that we know the wavelength is $0.6m$, we can deduce if we can detect objects using the light. Since the size of the bird is less than the wavelength of the light, we can't observe it.
+		\question Radar is used to determine distances to various objects by measuring the round-trip time for an echo from the object.
+		\begin{enumerate}[label=(\alph*)]
+			\item How far away is the planet Venus if the echo time is 989 s? \\
+			When using radars, it is important to keep in mind that we are using the idea of echos. Thus, we have the following:
+			$$v=\dfrac{s_T}{t}=\dfrac{2s}{t}$$
+			But, our radar uses radio waves which travel at $c\implies v=c$.
+			$$c=\dfrac{2s}{t}$$
+			$$s=\dfrac{ct}{2}=\dfrac{989s\times3.00\times10^8m/s}{2}$$
+			\item What is the echo time for a car 75.0 m from a Highway Police radar unit?
+			$$c=\dfrac{2s}{t}\implies t=\dfrac{2s}{c}$$
+			$$t=\dfrac{2\times75.0m}{3.00\times10^8m/s}$$
+			\item How accurately (in nanoseconds) must you be able to measure the echo time to an airplane 12.0 km away to determine its distance within 10.0 m? \\
+			The accuracy of the time can be measured using the accuracy of the distance. From the previous questions, we have related the distance to time.
+			$$t=\dfrac{2s}{c}\implies \Delta t=\dfrac{2\Delta s}{c}$$
+			$$t=\dfrac{2\times10m}{3\times10^8m/s}=6.67\times10^{-8}s$$
+			$$t=66.7ns$$
+		\end{enumerate}
+		\subsection*{Advanced Problems}
+		\question Show that the Electric and Magnetic fields of all electromagnetic waves are related in such a way that $\textbf{E}=c\textbf{B}$.
+		\question Assume the helium-neon lasers commonly used in student physics laboratories have power outputs of 0.250 mW.
+		\begin{enumerate}[label=(\alph*)]
+			\item If such a laser beam is projected onto a circular spot 0.500$\mu$m in radius, what is its intensity?
+			\item Find the peak magnetic field strength.
+			\item Find the peak electric field strength.
+		\end{enumerate}
+	\end{questions}		
+\end{document}

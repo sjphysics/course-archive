@@ -1,0 +1,144 @@
+\documentclass[9pt,addpoints]{exam}
+\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{Homework 1}{}{Page \thepage\ of \numpages}
+\runningheadrule
+\author{Aaron GK}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=10mm,
+	right=10mm,
+	bottom=5mm,
+	top=5mm,
+}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+
+\begin{document}
+	\title{St John Baptist De La Salle Catholic School, Addis Ababa\\
+		\large Homework 1 Solutions\\
+		2nd Quarter}
+	\maketitle
+	\begin{center}
+		\fbox{\fbox{\parbox{6in}{\centering
+					Notes, and use of other aids is allowed.  Read all directions carefully and write your answers in the space provided.  To receive full credit, you must show all of your work. \textbf{Cheating or indications of cheating and similar answers will be punished accordingly}. 
+		}}}
+		\subsubsection*{Information}
+		\begin{itemize}
+			\item The homework is due on \textbf{Monday}, \textbf{November 28th}.
+			\item You should Work on it \textbf{individually} and consult me if you have any questions. As I have reiterated multiple times, cheating will have a serious consequence.
+			\item For purposes of neatness and simplicity of grading, you should do the homework on an \textbf{A-4 paper}.
+		\end{itemize}
+	\end{center}
+	\begin{center}
+		\subsection*{Questions}
+	\end{center}
+	
+	
+	\begin{questions}
+		\question We have seen the equations of uniformly accelerated motion(\textbf{SUVAT equations}) and used them multiple times. Recall that for rotational motion, the kinematics are very similar to its linear counterparts. For this question, derive the equations we use when the angular acceleration is constant($\varDelta\alpha=0$). \\ \\
+		\textbf{Solution} \\
+		
+		If the angular acceleration of an object is constant, it means that the slope of our \textbf{$\omega$ v t} graph is constant. For that reason, we have:
+		$$\omega_{ave}=\dfrac{\omega_i+\omega_f}{2}$$
+		From there, we know that the angular displacement is the average angular velocity multiplied by time:
+		$$\theta=\omega_{ave}t$$
+		$$\theta=\dfrac{\omega_i+\omega_f}{2}t$$
+		We know, from the definition of angular acceleration that:
+		$$\alpha=\dfrac{\varDelta\omega}{t}=\dfrac{\omega_f-\omega_i}{\varDelta t}$$
+		From the equation above, we have $\omega_f=\omega_i+\alpha t$ \& $\omega_i=\omega_f-\alpha t$. We can then plug these into the angular displacement equation:
+		$$\theta=\dfrac{(\omega_i+(\omega_i+\alpha t))}{2}t=\omega_i t+\dfrac{\alpha t^2}{2}$$
+		$$\theta=\dfrac{((\omega_f-\alpha t)+\omega_f)}{2}t=\omega_f t-\dfrac{\alpha t^2}{2}$$
+		We can also express time in the following manner:
+		$$t=\dfrac{2\theta}{\omega_i+\omega_f}$$
+		We can then plug \textit{\textbf{t}} into the equation below:
+		$$\alpha=\dfrac{\omega_f-\omega_i}{t}$$
+		$$\alpha t=\omega_f-\omega_i$$		
+		$$\alpha\dfrac{2\theta}{\omega_i+\omega_f}=\omega_f-\omega_i$$		
+		$$2\alpha\theta=\omega_f^2-\omega_i^2$$
+		\question Show the relationships between linear and angular physical quantities and derive how they relate to one another. \\ \\
+		\textbf{Solution} \\ \\
+		The primary relationship between angular and linear quantities starts with the arc length:
+		$$s=r\theta$$
+		From there, we can divide both sides by \textbf{\textit{t}} and develop other relationships:
+		$$\dfrac{s}{t}=\dfrac{r\theta}{t}=r\dfrac{\theta}{t}$$	
+		$$v=r\omega$$
+		We can, again, go on and divide both sides by \textbf{\textit{t}} and come up with another important relationship:
+		$$\dfrac{v}{t}=\dfrac{r\omega}{t}=r\dfrac{\omega}{t}$$
+		$$a=r\alpha$$
+		\question When the equation of centripetal acceleration is derived, we find that it is given by:
+		$$\textbf{a}_c=-\dfrac{v^2}{r}(\cos(\omega t)\hat{\textbf{i}}+\sin(\omega t)\hat{\textbf{j}})$$
+		\begin{itemize}
+			\item Discuss what the negative sign is indicative of. \\  \\ \textbf{Solution} \\
+			The negative sign indicates that the direction of the angular velocity.
+			\item How does the $(\cos(\omega t)\hat{\textbf{i}}+\sin(\omega t)\hat{\textbf{j}})$ term not affect the magnitude of the centripetal acceleration? \\ \\ \textbf{Solution} \\
+			The term is a unit vector that gives the direction for the centripetal acceleration. However, its magnitude is 1 and we can show that as follows:
+			$$\sqrt{(\cos(\omega t))^2 + (\sin(\omega t))^2}$$ 
+			$$\sqrt{1}=1$$
+		\end{itemize}
+		\question For an object in a circular motion, we have two accelerations; the tangential acceleration and the centripetal acceleration. Discuss the differences between the two and derive an equation for the resultant acceleration using only \textit{r}, \textit{$\omega$}, and \textit{$\alpha$}. \\ \\ \textbf{Solution} \\
+		The tangential acceleration is the acceleration due to the change in the angular velocity. However, the centripetal acceleration is existent because of the change in the tangential velocity of the body.
+		$$a_t=r\alpha\text{  while   } a_c=\dfrac{v^2}{r}=\omega^2r$$
+		Since $a_t$ and $a_c$ are perpendicular, the resultant is computed by Pythagoras' theorem:
+		$$a=\sqrt{(a_t)^2+(a_c)^2}=\sqrt{(r\alpha)^2+(\omega^2r)^2}=\sqrt{r^2\alpha^2+\omega^4r^2}$$
+		$$a=r\sqrt{\alpha^2+\omega^4}$$
+		
+		\question A disk is rotating in a uniform circular motion with an axis of rotation that is out of the page. Answer the following questions:
+		\begin{itemize}
+			\item What direction is the disk rotating in?
+			\\ \textbf{Solution} \\
+			Since our axis is out of the page and the direction of rotation is given by the right hand rule, we can expect the disk to be rotating in the counterclockwise direction.
+			\item We put two rocks, a \& b on the disk at $\dfrac{r}{3}$ and $\dfrac{2r}{5}$ distances from the axis of rotation. Which of the two rocks has a larger \textit{linear} speed? \\ \textbf{Solution} \\
+			Since $\omega$ is constant,
+			$$v_a=\omega(\frac{1}{3}r)=\frac{1}{3}v$$ and 
+			$$v_b=\omega(\frac{2}{5}r)=\frac{2}{5}v$$
+			We can clearly see that $v_b$ is larger than $v_a$. Thus, the second rock, b, has the larger linear speed.
+		\end{itemize}
+		\question Answer the following questions:
+		\begin{itemize}
+			\item What is the period of rotation of Earth in seconds? \\ \textbf{Solution} \\
+			$$\text{T}= 1\text{ day}=86400\text{ sec}$$
+			\item What is the angular velocity of Earth? \\ \textbf{Solution} \\
+			Earth takes a day to complete a full rotation around its orbit, hence:
+			$$\theta=1 \text{rev}=2\pi\text{ rad  and t = }86,400\text{ sec}$$
+			$$\omega=\dfrac{\theta}{T}=\dfrac{2\pi\text{ rad}}{86,400\text{ sec}}=\frac{\pi}{43,200}\text{ rad/sec}$$
+			\item Given that Earth has a radius of  $6.4\times10^6$m at its equator, what is the linear velocity at Earth's surface? \\ \textbf{Solution} \\
+			$$v=r\omega$$
+			$$v=6.4\times10^6m\times\frac{\pi}{43,200}\text{ rad/sec}$$
+			$$v=148.148\pi\text{ m/s}$$
+		\end{itemize}
+		\question A motor engine has a radius of 16 cm and rotates at 8000 rev/min at its maximum performance.
+		\begin{itemize}
+			\item Calculate the magnitude of the centripetal acceleration at its edge in meters per second squared and convert it to multiples of \textbf{\textit{g}}. \\ \textbf{Solution} \\
+			An important step to do while doing exercise is expressing physical quantities with their SI units. Thus, we need to convert the given quantities into their SI units:
+			$$r=16cm=0.16m$$
+			$$\omega=8000\times \dfrac{2\pi}{60} \text{ rad/s}$$
+			$$\omega=266.7\pi\text{ rad/s}$$
+			We know that $a_c=\dfrac{v^2}{r}$
+			$$a_c=\dfrac{v^2}{r}=\omega^2 r$$
+			$$a_c=\dfrac{(266.7\pi\text{ rad/s})^2}{0.16m}$$
+			$$a_c=444,444.4 \pi^2\text{ m/s}^2$$
+			$$a_c=444,444.4 \pi^2\text{ m/s}^2 /9.8m/s^2 \times \textbf{g}$$
+			$$a_c=45,351.4\pi^2\textbf{ g} $$	
+			
+			\item What is the linear speed of a point on its edge?
+			$$v=\omega r$$
+			$$v=0.16m\times266.7\pi\text{ rad/s}$$
+			$$v=42.7\pi\text{ m/s}$$ 
+		\end{itemize}
+		
+	\end{questions}		
+\end{document}

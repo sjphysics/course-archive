@@ -1,0 +1,128 @@
+\documentclass[9pt,addpoints]{exam}
+\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{Homework 7}{}{Page \thepage\ of \numpages}
+\runningheadrule
+\author{Aaron GK}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=10mm,
+	right=10mm,
+	bottom=5mm,
+	top=5mm,
+}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+
+\begin{document}
+	\title{St John Baptist De La Salle Catholic School, Addis Ababa\\
+		\large Homework 7 Solutions\\
+		2nd Quarter}
+	\maketitle
+	\begin{center}
+		\fbox{\fbox{\parbox{6in}{\centering
+					Notes, and use of other aids is allowed.  Read all directions carefully and write your answers in the space provided.  To receive full credit, you must show all of your work. \textbf{Cheating or indications of cheating and similar answers will be punished accordingly}. 
+		}}}
+		\subsubsection*{Information}
+		\begin{itemize}
+			\item The homework is due on \textbf{Monday}, \textbf{January 16th}.
+			\item You should Work on it \textbf{individually} and consult me if you have any questions. As I have reiterated multiple times, cheating will have a serious consequence.
+			\item For purposes of neatness and simplicity of grading, you should do the homework on an \textbf{A-4 paper}.
+		\end{itemize}
+	\end{center}
+	\begin{center}
+		\subsection*{Questions}
+	\end{center}
+	
+	\begin{questions}
+		\question Define current and relate it to resistance. Compare capacitance to resistance. \\ \\
+		\textbf{Solution}\\ \\
+		Current is the time rate of flow charges. We can relate current to resistance in various ways, however, Ohm's Law is a good place to start. We can use the macroscopic form of Ohm's Law to define current as:
+		$$I=\dfrac{V}{R}$$
+		Capacitance is the measure of how well a capacitor can store charges per unit voltage while resistance is the opposition to the flow of current.
+		\question A capacitor in an RC circuit has a capacitance of 12nF while the resistor has a resistance of 600K$\Omega$. If the capacitor is charged until it is full, answer the following questions:
+		\begin{itemize}
+			\item Calculate the amount of time it would take the charge in the capacitor to drop by 63\%.
+			\\ \\
+			\textbf{Solution}\\ \\
+			Our capacitor is discharging, thus we know that the time it takes for the charge in the capacitor by 63\% from initially being full is the time constant. Thus, $t=\tau$
+			$$\tau=RC=6\times10^6\Omega\times1.2\times10^{-8}\text{F}$$
+			$$\tau=7.2\times10^{-2}s$$
+			\item Calculate the amount of time it would take for the charge to drop by 50\%. \\ \\
+			\textbf{Solution}\\ \\
+			Since my capacitor is discharging, I know that:
+			$$Q(t)=Qe^{-t/RC}$$
+			The charge in the capacitor is 50\% full which means $Q(t)=50\%\text{ of }Q=0.5Q.$ Thus,
+			$$0.5Q=Qe^{-t/RC}$$
+			$$0.5=e^{-t/RC}$$
+			Taking both sides of the functions into the natural logarithm, we get
+			$$\ln0.5=\ln e^{-t/RC}$$
+			$$\ln0.5=-t/RC$$	
+			$$t=-\ln0.5RC=-\ln0.5\tau=-1\times-0.693\times7.2\times10^{-2}s=4.99\times10^{-2}s$$
+			\item Calculate the amount of charge left when $\dfrac{2}{3}\tau$ amount of time has dissipated.\\ \\
+			\textbf{Solution}\\ \\
+			For this question, we just simply plug 2$\tau$ as the value of $t$. We have
+			$$Q(t)=Qe^{-t/RC}$$
+			$$Q(t)=Qe^{-2\tau/RC}$$
+			$$Q(t)=Qe^{-2\tau/\tau}$$
+			$$Q(t)=Qe^{-2}=\dfrac{Q}{e^2}\approxeq0.135Q$$
+			Thus, approximately about 13.5\% of the charge will have left.
+		\end{itemize}
+		\question There are three capacitors of capacitances 20$\mu$F, 40$\mu$F \& 80$\mu$F.
+		\begin{itemize}
+			\item Calculate the effective capacitance when the capacitors are connected in series with a battery of 1.5V. Calculate the charge, voltage \& energy in each capacitor. \\ \\
+			\textbf{Solution}\\ \\
+			When the capacitors are connected in series, the effective capacitance is given as follows:
+			$$\dfrac{1}{C}=\dfrac{1}{C_1}+\dfrac{1}{C_2}+\dfrac{1}{C_3}$$
+			$$\dfrac{1}{C}=\dfrac{1}{20\mu F}+\dfrac{1}{40\mu F}+\dfrac{1}{80\mu F}$$
+			$$\dfrac{1}{C}=\dfrac{4+2+1}{80\mu F}=\dfrac{7}{80\mu F}$$
+			$$C=\dfrac{80}{7}\mu F$$
+			From this, we can calculate the total charge in the circuit:
+			$$Q=CV=\dfrac{80}{7}\mu F\times1.5V=\dfrac{120}{7}\mu C$$
+			But, we know that the charge in each capacitor is equal since they are connected in series, thus: 
+			$$Q=Q_1=Q_2=Q_3=\dfrac{120}{7}\mu C\text{, but the voltage in each capacitor is different:}$$
+			$$V_1=\dfrac{Q_1}{C_1}=\dfrac{\dfrac{120}{7}\mu C}{20\mu F}=\dfrac{6}{7}V\text{, while the energy is :   }E_1=\dfrac{1}{2}Q_1V_1=\dfrac{1}{2}\times\dfrac{120}{7}\mu C\times\dfrac{6}{7}V$$
+			$$V_2=\dfrac{Q_2}{C_2}=\dfrac{\dfrac{120}{7}\mu C}{40\mu F}=\dfrac{3}{7}V\text{, while the energy is :   }E_2=\dfrac{1}{2}Q_2V_2=\dfrac{1}{2}\times\dfrac{120}{7}\mu C\times\dfrac{3}{7}V$$
+			$$V_3=\dfrac{Q_3}{C_3}=\dfrac{\dfrac{120}{7}\mu C}{80\mu F}=\dfrac{3}{14}V\text{, while the energy is :   }E_3=\dfrac{1}{2}Q_3V_3=\dfrac{1}{2}\times\dfrac{120}{7}\mu C\times\dfrac{3}{14}V$$
+			\item Calculate the effective capacitance when the capacitors are connected in parallel with a battery of 1.5V. Calculate the charge, voltage \& energy in each capacitor.
+			When the capacitors are connected in parallel, it is a bit easier to calculate the effective capacitance.
+			$$C=C_1+C_2+C_3=20\mu F+40\mu F+60\mu F$$
+			$$C=120\mu F$$
+			We know that the voltage is the same when capacitors are connected in parallel, thus:
+  			$$V=V_1=V_2=V_3=1.5V\text{, but the charge in each capacitor is different:}$$
+			$$Q_1=C_1V_1=20\mu F\times1.5V=30\mu C=\text{, while the energy is :   }E_1=\dfrac{1}{2}Q_1V_1=\dfrac{1}{2}\times30\mu C\times1.5V$$
+			$$Q_2=C_2V_2=40\mu F\times1.5V=60\mu C=\text{, while the energy is :   }E_2=\dfrac{1}{2}Q_1V_1=\dfrac{1}{2}\times60\mu C\times1.5V$$
+			$$Q_3=C_3V_3=80\mu F\times1.5V=120\mu C=\text{, while the energy is :   }E_3=\dfrac{1}{2}Q_1V_1=\dfrac{1}{2}\times120\mu C\times1.5V$$
+		\end{itemize}
+		\subsection*{Additional Challenge Problems}
+		\textit{As usual, the following problems are not required to be submitted, but I highly suggest you work on them} 
+		\question We have seen that there is actually a barrier between the plates of a capacitor - the dielectric, which is an insulator. However, we do know that current flows in the circuit while a capacitor is present in a circuit. Why doesn't the dielectric stop the current? Explain in terms of displacement current. \\ \\
+		\textbf{Solution} \\ \\
+		When current flows into a capacitor, the charges stay on the plates because they can't get past the dielectric. Electrons are pulled into one of the plates, and it becomes overall negatively charged. The large mass of negative charges on one plate pushes away like charges on the other plate, making it positively charged. The positive and negative charges on each of these plates attract each other. But, because of the presence of the dielectric, the charges will stay on the plate. The stationary charges on these plates create an electric field, which influence electric potential energy and voltage. We have also seen the microscopic form of Ohm's Law and it states that $\vec{J}\propto\vec{E}$. As the electrons accumulate one one of the plates, the electric flux density changes. This causes, a displacement current because on the opposite plate of the capacitor, a similar process occurs, but with opposite electrical polarity. The displacement current flows from one plate to the other, through the dielectric(because it acts through the field) whenever current flows into or out of the capacitor plates and has the exact same magnitude as the current flowing through the capacitor's terminals.
+		\question Show that the current in an RC circuit while the capacitor is discharging can be described as follows 
+		$$\text{I(t)} = - \frac{\text{Q}}{\text{RC}}e^{-\text{t}/\tau}$$\\ \\
+		\textbf{Solution} \\ \\
+		Current is simply defined as the time rate of flow of charges, thus:
+		$$I=\dfrac{\Delta Q}{\Delta t}$$
+		We can express this using differential calculus and solve it as follows:
+		$$I(t)=\dfrac{dQ(t)}{dt}$$
+		When a capacitor is discharging, we know that $Q(t)=Qe^{-t/Rc}$:
+		$$I(t)=d\dfrac{Qe^{-t/Rc}}{dt}=Q d\dfrac{e^{-t/Rc}}{dt}$$
+		$$I(t)=Qe^{-t/RC}(-1/RC)$$
+		$$I(t)=\dfrac{-Q}{RC}e^{-t/RC}$$
+		QED
+	\end{questions}		
+\end{document}

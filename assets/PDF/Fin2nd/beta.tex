@@ -1,0 +1,264 @@
+\documentclass[13pt,addpoints]{exam}
+\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\date{January, 2022}\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=10mm,
+	right=10mm,
+	bottom=10mm,
+	top=5mm,
+}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{Final Examination}{}{Page \thepage\ of \numpages}
+\runningheadrule
+
+\firstpagefooter{}{}{}
+\runningfooter{By Aaron G.K. and Tariku D.}{}{Page \thepage\ of \numpages}
+
+
+\begin{document}
+	\title{St John Baptist De La Salle Catholic School, Addis Ababa\\
+		\large Grade 10 Physics Final Examination \\
+		4th Quarter}
+	\maketitle
+	\begin{center}
+		\fbox{\fbox{\parbox{6in}{\centering
+					Notes, and use of other aids is \textbf{NOT} allowed.  Read all directions carefully and write your answers in the space provided.  To receive full credit, you must show all of your work.}}}
+		\subsubsection*{Useful Constants}
+		\begin{itemize}
+			\item $\textbf{e}=1.6\times10^{-19}\text{C}\text{  - elementary charge}$ \textbf{~}  $\textbf{m}_e=9.11\times10^{-31}\text{kg}\text{  - mass of an electron}$
+			\item $\textbf{m}_p=1.673\times10^{-27}\text{kg}\text{  - mass of a proton}$ \textbf{~}$\mu_0=4\pi\times10^{-7}\frac{H}{m}\text{  - permeability of free space}$
+			\item $\epsilon_0=8.85\times10^{-12}\frac{F}{m}\text{  - permitivitty of free space}$\textbf{~}$\textbf{G} = 6.672\times10^{-12}\frac{Nm^2}{kg^2}\text{  - gravitational constant}$
+			\item $\textbf{N}_A = 6.022\times10^{23}\frac{1}{mol}\text{  - Avogadro's number}$$\textbf{~}$$\textbf{a}_g=10m/s^2\text{  - acceleration due to gravity}$
+		\end{itemize}
+	\end{center}
+	{Name:\underline{\hspace{2in}}\text{     }{Roll Number:\underline{\hspace{0.5in}}\text{     }{Section:\underline{\hspace{0.3in}}{Time Allowed: \bf{1:45} hr}
+				\subsubsection*{Multiple Choice Questions}
+				\begin{questions}
+					\question Which of the following changes to a parallel plate capacitor would not increase the energy stored in a capacitor at a fixed voltage?\\
+					\begin{oneparchoices}
+						\choice Increasing the area of the plates
+						\choice Increasing the dielectric constant
+						\choice Decreasing the charges on the plate
+						\choice Increasing the distance between the plates
+						\choice None of the above
+					\end{oneparchoices}
+					\question An electron enters a region of uniform electric field of 4$\times10^3$ V/m. What is the force on the electron?\\
+					\begin{oneparchoices}
+						\choice $8\times10^{-16}$ N
+						\choice $6.4\times10^{-16}$ N
+						\choice $8\times10^{16}$ N
+						\choice $1.6\times10^{-19}$ N
+						\choice None of the above
+					\end{oneparchoices}
+					\question Which of the following is true about gravitational potential energy?\\
+					\begin{oneparchoices}
+						\choice It is positive because gravity and mass are positive
+						\choice It depends on the motion of the body
+						\choice It depends on the height above the ground where the body is
+						\choice It only depends on initial and final heights
+						\choice None of the above
+					\end{oneparchoices}
+					\question What is the measure of the distribution of mass of a body in relation to its axis of rotation?\\
+					\begin{oneparchoices}
+						\choice Torque
+						\choice Angular Momentum
+						\choice Moment of Inertia
+						\choice Linear Momentum
+						\choice None of the above
+					\end{oneparchoices}
+					\question A point charge $Q_1$ is at $x=0$ and another point charge $Q_2$ is at $x=4$. What is the relationship between these two point charges if the absolute potential due to these charges is 0 at $x=8$?\\
+					\begin{oneparchoices}
+						\choice $Q_1=4Q_2$
+						\choice $Q_1=-2Q_2$
+						\choice $Q_1=-8Q_2$
+						\choice $Q_1=4Q_2$
+						\choice None of the above
+					\end{oneparchoices}
+					\question The potential difference between the terminals of a battery when the battery is isolated is:\\
+					\begin{oneparchoices}
+						\choice Electric Force
+						\choice Terminal Voltage
+						\choice Electromotive Force
+						\choice Electrolytic Voltage
+					\end{oneparchoices}
+					\question A simple circuit consists of a load resistor of 10$\Omega$ connected to a battery of 18V EMF. If the current through the circuit is 1.6A, what is the internal resistance of the battery?\\
+					\begin{oneparchoices}
+						\choice 1.25$\Omega$
+						\choice 12.5$\Omega$
+						\choice 10$\Omega$
+						\choice 1.6$\Omega$
+						\choice None of the above
+					\end{oneparchoices}
+					\question The escape speed at the surface of some planet is twice that of the Earth's escape speed. What is the mass of the planet($M_p$) in terms of Earth's mass($M_e$)?\\
+					\begin{oneparchoices}
+						\choice $M_p$ = 0.5 $M_e$
+						\choice $M_p$ = 2 $M_e$
+						\choice $M_p$ = 4 $M_e$
+						\choice $M_p$ = 8 $M_e$
+						\choice None of the above
+					\end{oneparchoices}
+					\question One electron-volt is the same as:\\
+					\begin{oneparchoices}
+						\choice 3.6 J
+						\choice 1.0 J
+						\choice $3.6\times10^{6}$ J
+						\choice $1.6\times10^{-19}$ J
+					\end{oneparchoices}
+					\question Electric companies usually list their billings in amounts of cents/KWh. For example, the British Power company EON bills consumers 7.3 cents/KWh. In this quantity, KWh is a unit of:\\
+					\begin{oneparchoices}
+						\choice Energy
+						\choice Power
+						\choice Current
+						\choice Voltage
+						\choice None of the above
+					\end{oneparchoices}
+					\question A 2$\mu$F and 1$\mu$F capacitors are connected in parallel and a potential difference is applied across the combination. The 2$\mu$F capacitor has:
+					\begin{oneparchoices}
+						\choice half the charge of the 1$\mu$F capacitor
+						\choice twice the stored energy of the 1$\mu$F capacitor
+						\choice twice the potential difference of the 1$\mu$F capacitor
+						\choice half the stored energy of the 1$\mu$F capacitor
+						\choice None of the above
+					\end{oneparchoices}
+					\question A tangent line to an equipotential surface and the electric field due to the same charge at any point must be:\\
+					\begin{oneparchoices}
+						\choice Parallel
+						\choice Perpendicular
+						\choice Opposite in direction
+						\choice They don't have any relationship
+						\choice None of the above
+					\end{oneparchoices}
+					\question Which of the following is true about resistivity and conductivity?\\
+					\begin{oneparchoices}
+						\choice They are reciprocals of one another
+						\choice They are dimensionless quantities
+						\choice They have direct relationship
+						\choice They have the same SI units
+						\choice None of the above
+					\end{oneparchoices}
+					\question If two, infinitely long parallel conducting wires carry the same current and the force per unit length on each wire is $2\times10^{-7}$ N/m, the current in each wire is defined to be:\\
+					\begin{oneparchoices}
+						\choice 1 Ampere
+						\choice 1 Coulomb
+						\choice $2\times10^{-7}$ Coulomb
+						\choice $2\times10^{-7}$ Ampere
+						\choice None of the above
+					\end{oneparchoices}
+					\question The angular impulse experienced by a body is equivalent to the change in:\\
+					\begin{oneparchoices}
+						\choice Mechanical energy
+						\choice Linear Momentum
+						\choice Angular Momentum
+						\choice Relativistic Kinetic Energy
+						\choice None of the above
+					\end{oneparchoices}
+					\question A 9V battery is connected to a 2$\mu$F capacitor. How much electric energy can be stored in the capacitor?\\
+					\begin{oneparchoices}
+						\choice 1.62$\times10^{-5}$ J
+						\choice 8.1$\times10^{-5}$ J
+						\choice 1.62$\times10^{-4}$ J
+						\choice 8.1$\times10^{-4}$ J
+						\choice None of the above
+					\end{oneparchoices}
+					\question The two ends of a 4$\Omega$ resistor are connected to a 16V battery. What is the total power delivered by the battery to the circuit?\\
+					\begin{oneparchoices}
+						\choice 4 W 
+						\choice 16 W
+						\choice 32 W
+						\choice 64 W
+						\choice None of the above
+					\end{oneparchoices}
+					\question Electric potential energy an energy of a charge possessed because it is in the:\\
+					\begin{oneparchoices}
+						\choice region of other masses
+						\choice vacuum
+						\choice region of zero electric field
+						\choice region of other charges
+						\choice None of the above
+					\end{oneparchoices}
+					\question Two resistors $R_1$ and $R_2$ are connected in series. If $R_1$=2$R_2$, which of the following is true?\\
+					\begin{oneparchoices}
+						\choice $V_1$=2$V_2$
+						\choice $V_1$=$\dfrac{1}{2}$$V_2$
+						\choice $I_1$=2$I_2$
+						\choice $I_1$=$\dfrac{1}{2}$$I_2$
+						\choice None of the above
+					\end{oneparchoices}
+					\question A 3A current is flowing through a Copper conductor ($n= 8.5\times10^{28}m^{-3}$) that has a cross sectional area of 1mm$^2$. What is the drift speed of the electrons in this conductor?\\
+					\begin{oneparchoices}
+						\choice $2.205\times10^{4}m/s$
+						\choice $2.205\times10^{-4}m/s$
+						\choice $2.205\times10^{-8}m/s$
+						\choice $2.205\times10^{-2}m/s$
+						\choice None of the above
+					\end{oneparchoices}
+					\question All conductors obey Ohm's Law.\\
+					\begin{oneparchoices}
+						\choice True
+						\choice False
+						\choice None of the above
+					\end{oneparchoices}
+					\question If the value of acceleration due to gravity on the surface of the Earth is \textbf{g}, what will its value be at a height equal to the radius of the Earth above the surface?\\ \\
+					\begin{oneparchoices}
+						\choice $\dfrac{\textbf{g}}{8}$
+						\choice $\dfrac{\textbf{g}}{4}$
+						\choice $\dfrac{\textbf{g}}{2}$
+						\choice \textbf{g}
+						\choice None of the above
+					\end{oneparchoices}
+					\question What is the potential at a distance of 10m from a charge 0f -5.0C?\\
+					\begin{oneparchoices}
+						\choice $-4.45\times10^{9}$ V
+						\choice $+4.45\times10^{9}$ V
+						\choice $-4.45\times10^{-9}$ V
+						\choice $-4.45\times10^{+9}$ V
+						\choice None of the above
+					\end{oneparchoices}
+					\question There are two parallel parallel charged plates in some region. A positive charge of 1.0$\times10^{-4}$ C is on the negatively charged plate. If the potential on the positively charged plate is +10KV and the potential on the negatively charged plate is -10KV, how much work is required to move the charge from the negative plate to the positive plate?\\
+					\begin{oneparchoices}
+						\choice 2.0 J
+						\choice 0.0 J
+						\choice 4.0 J
+						\choice 1.0 J
+						\choice None of the above
+					\end{oneparchoices} 
+					\question A charge of $Q_1=10\times10^{-9}$C is placed at the origin while another charge of $Q_2=10\times10^{-9}$C is placed at (0,6). What is the electric force on a third charge $Q_3=-2.5\times10^{-8}$C if it is placed at (4,3) due to $Q_1$ and $Q_2$?\\
+					\begin{oneparchoices}
+						\choice 1.08$\times10^{-7}$N, positive Y direction 
+						\choice 1.42$\times10^{-7}$N, positive X direction
+						\choice 1.42$\times10^{-7}$N, negative Y direction
+						\choice 9.00$\times10^{-7}$N, positive Y direction
+						\choice None of the above
+					\end{oneparchoices}
+					\subsubsection*{Conceptual \& Proof Problems}
+					\question What are the factors affecting the resistance of conductor? List each factor and explain the effects of changing the factors on the resistance. \vspace{1in}
+					\question Show that relation $R=\dfrac{\rho L}{A}$ follows from the macroscopic form of Ohm's Law($\implies V=IR$) and microscopic form($J=\sigma E$).\vspace{1in}
+					\question Consider a region in space where a uniform electric field points in the positive Y direction. \begin{itemize}
+						\item What is the orientation of the equipotential surfaces?\vspace{0.5in}
+						\item If you move in the negative Y direction, does electric potential decrease or increase?\vspace{0.5in}
+					\end{itemize}
+					\question Why are equipotential lines and surfaces perpendicular to the electric field lines?\vspace{0.3in}
+					\subsubsection*{Workout Problems}
+					\question A capacitor in an RC circuit has a capacitance of 40$\mu$F while the resistor has a resistance of 20K$\Omega$. If the capacitor is initially empty, answer the following questions: ($Q(t)=Q(1-e^{-\dfrac{t}{\tau}})$)
+					\begin{itemize}
+						\item Calculate the amount of time it would take the charge in the capacitor to reach 63\%.\vspace{0.7in}
+						\item Calculate the amount of charge left when $\dfrac{2}{5}\tau$ amount of time has dissipated.\vspace{0,7in}
+					\end{itemize}
+					\question How far apart are two conducting plates that have an electric field strength of  6.40×$10^3$V/m  between them, if one of the plates has a potential of -4.0KV and the other has a potential of 6.0KV?\vspace{1in}		
+					\question On a planet whose radius is  \textbf{2R}, the acceleration due to gravity at the surface of the planet is \textbf{g/3}. What is the mass of the planet in terms of Earth's mass if the radius of the Earth is R and the acceleration due to gravity at the surface of the Earth is \textbf{g}?\vspace{1in} ($g=\dfrac{GM}{R^2}$)
+					\subsubsection*{Extra Credit Problem}
+					\question Calculate the Schwarzschild radius of a hypothetical subatomic particle that has a mass of 700Gev/c$^2$. Explain why you think it whether that this particle can ever turn into a black hole or not?
+				\end{questions}
+			\end{document}

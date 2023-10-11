@@ -1,0 +1,254 @@
+\documentclass[11pt]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+\date{}
+
+\begin{document}
+
+\textbf{Purpose:} Determine the basics of how a circuit works and
+discover the relationships between circuit elements.
+
+\textbf{Directions:} Google
+\href{https://phet.colorado.edu/en/simulations/circuit-construction-kit-dc}{\emph{``PHET
+Circuit Construction Kit: DC''}}
+
+Answer each of the following questions in as much detail as possible.
+Start in the ``Intro'' section of the simulator.
+
+\textbf{\emph{Part 1: Exploration}}
+
+\begin{enumerate}
+\def\labelenumi{\Alph{enumi}.}
+\item
+  For each of the circuit elements that can be found on the left-hand
+  side of the simulator, describe them and explain what you think each
+  of them are for.
+\end{enumerate}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+\textbf{Circuit Element} & \textbf{Description} &
+\textbf{Purpose}\tabularnewline
+\midrule
+\endhead
+Wire & &\tabularnewline
+Battery & &\tabularnewline
+Light Bulb & &\tabularnewline
+Switch & &\tabularnewline
+Fuse & &\tabularnewline
+Resistor & &\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{\Alph{enumi}.}
+\item
+  Underneath the lefthand panel, select the symbol that looks like this:
+\end{enumerate}
+
+Draw in the symbol for each circuit element.
+
+\begin{longtable}[]{@{}llllll@{}}
+\toprule
+\textbf{Wire} & \textbf{Battery} & \textbf{Light Bulb} & \textbf{Switch}
+& \textbf{Fuse} & \textbf{Resistor}\tabularnewline
+\midrule
+\endhead
+& & & & &\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\item
+  What do you notice about the symbols for the other items (coin, dog,
+  hand, etc.), and why do you think this is the case?
+\end{enumerate}
+
+\textbf{\emph{Part 2: Building a Circuit}}
+
+Switch the circuit elements back to lifelike representations by clicking
+this button:
+
+\begin{enumerate}
+\def\labelenumi{\Alph{enumi}.}
+\item
+  What do you think the blue circles represent?
+\item
+  Select a wire. What can you change about the wire?
+\item
+  Select a battery. What can you change about the battery?
+\item
+  Select a light bulb. What can you change about the light bulb?
+\item
+  Select a resistor. What can you change about the resistor?
+\item
+  Drag and drop elements onto the workspace and connect them together to
+  make a working circuit. How do you know that the circuit is working?
+\item
+  What conditions must be true for the electrons to move?
+\item
+  Draw a schematic of your working circuit below:
+\end{enumerate}
+
+\begin{longtable}[]{@{}l@{}}
+\toprule
+\bottomrule
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{\Alph{enumi}.}
+\item
+  What could you change about your circuit and still get it to work?
+\end{enumerate}
+
+\textbf{\emph{Part 3: Identifying Relationships}}
+
+Create a circuit like the one shown below:
+
+%\includegraphics[width=3.80833in,height=2.12500in]{media/image3.png}
+
+\begin{enumerate}
+\def\labelenumi{\Alph{enumi}.}
+\item
+  Which direction do the blue circles flow around the circuit?
+\item
+  Why do they flow in that direction?
+\item
+  \textbf{Prediction} - How will changing the resistance affect their
+  flow?
+\item
+  \textbf{Prediction -} How will changing the voltage affect their flow?
+\item
+  Based on your observations, what do you think each of the following
+  measures
+
+  \begin{enumerate}
+  \def\labelenumii{\roman{enumii}.}
+  \item
+    Current --
+  \item
+    Voltage --
+  \item
+    Resistance --
+  \end{enumerate}
+\end{enumerate}
+
+Using the ammeter record how a change in voltage or resistance affects
+the current flowing through the circuit. Then graph the relationship.
+For each data set, choose a fixed value for your constant variable and
+record it. You can also record your data in an excel sheet and draw a
+graph on there, or use python.
+
+\emph{Data Set 1 -- Voltage vs. Current}
+
+Constant Variable: Resistance = \_\_\_\_\_\_\_\_\_\_
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\textbf{Voltage}
+
+Units:\_\_\_\_\_\_\_\_ & \textbf{Current}
+
+Units:\_\_\_\_\_\_\_\_\tabularnewline
+\midrule
+\endhead
+&\tabularnewline
+&\tabularnewline
+&\tabularnewline
+&\tabularnewline
+&\tabularnewline
+&\tabularnewline
+&\tabularnewline
+\bottomrule
+\end{longtable}
+
+\emph{Graph}:
+
+Describe the patterns and relationships that you see in your data table
+and graph.
+
+\emph{Data Set 2 -- Resistance vs. Current}
+
+Constant Variable: Voltage = \_\_\_\_\_\_\_\_\_\_
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\textbf{Resistance}
+
+Units: \_\_\_\_\_\_\_\_ & \textbf{Current}
+
+Units: \_\_\_\_\_\_\_\_\tabularnewline
+\midrule
+\endhead
+&\tabularnewline
+&\tabularnewline
+&\tabularnewline
+&\tabularnewline
+&\tabularnewline
+&\tabularnewline
+&\tabularnewline
+\bottomrule
+\end{longtable}
+
+\emph{Graph}:
+
+Describe the patterns and relationships that you see in your data table
+and graph.
+
+\end{document}

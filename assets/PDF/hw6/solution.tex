@@ -1,0 +1,111 @@
+\documentclass[9pt,addpoints]{exam}
+\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{Homework 6}{}{Page \thepage\ of \numpages}
+\runningheadrule
+\author{Aaron GK}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=10mm,
+	right=10mm,
+	bottom=5mm,
+	top=5mm,
+}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+
+\begin{document}
+	\title{St John Baptist De La Salle Catholic School, Addis Ababa\\
+		\large Homework 6 \\
+		2nd Quarter}
+	\maketitle
+	\begin{center}
+		\fbox{\fbox{\parbox{6in}{\centering
+					Notes, and use of other aids is allowed.  Read all directions carefully and write your answers in the space provided.  To receive full credit, you must show all of your work. \textbf{Cheating or indications of cheating and similar answers will be punished accordingly}. 
+		}}}
+		\subsubsection*{Information}
+		\begin{itemize}
+			\item The homework is due on \textbf{Thursday}, \textbf{January 5th}.
+			\item You should Work on it \textbf{individually} and consult me if you have any questions. As I have reiterated multiple times, cheating will have a serious consequence.
+			\item For purposes of neatness and simplicity of grading, you should do the homework on an \textbf{A-4 paper}.
+		\end{itemize}
+	\end{center}
+	\begin{center}
+		\subsection*{Questions}
+	\end{center}
+	
+	\begin{questions}
+		\question A parallel-plate capacitor has a capacitance of 20$\mu$F. If the separation between the plates of the capacitor is 20mm, and the plates are squares of side length 3cm. If the plates store a charge of 20$\mu$C, what is the potential difference across the plates of the capacitor. Find the energy stored in the capacitor. \\ \\
+		\textbf{Solution}\\
+		 To find the potential difference, we can do the following:
+		 $$	\text{C}=\dfrac{\text{Q}}{\text{V}}\implies\text{V}=\dfrac{\text{Q}}{\text{C}}$$
+		 $$\text{V}=\dfrac{20\mu\text{C}}{20\mu\text{F}}$$
+		 $$\text{V}=1\text{ V}$$
+		 We can't use the given capacitor areas \& side lengths because assuming we don't explicitly know whether we have a capacitor, but we have been given the capacitance that we can use.
+		\question What is a dielectric and what role does it play in capacitors? Why does the presence of dielectric materials increase the capacitance of capacitors?\\ \\
+		\textbf{Solution}\\
+		A dielectric is an insulator we add in between the plates of a capacitor to increase the capacitance. The presence of a dielectric increases the capacitance because its presence causes a distortion in the electric field, which decrease the potential difference between the plates of the capacitor which effectively means that the capacitance has decreased.
+		\question Calculate the work done by a 1.5V battery as it charges a 35nF capacitor in the flash unit of a camera.\\ \\
+		\textbf{Solution}\\
+		The work done here is the potential energy stored in the capacitor. \\
+		$$\text{E}=\dfrac{1}{2}\text{CV}^2$$
+		$$\text{E}=\dfrac{1}{2}\times35\times10^{-9}\text{F}\times(1.5\text{V})^2$$
+		$$\text{E}=3.94\times10^{-8}\text{J}$$
+		\question Teflon has a dielectric constant of 2.1. If Teflon was placed between the plates of the capacitor in question 1, find \begin{itemize}
+			\item Teflon's permissivity\\ \\ \textbf{Solution}\\
+			$$\kappa=\dfrac{\varepsilon}{\varepsilon_0}$$
+			$$\varepsilon=\kappa\varepsilon_0$$
+			$$\varepsilon=2.1\times8.85\times10^{-12}\text{F/m}$$
+			$$\varepsilon=1.86\times10^{-11}\text{F/m}$$
+			\item The capacitance of the capacitor with teflon as a dielctric. 
+			$$\text{C}=\kappa\text{C}_0$$
+			$$\text{C}=2.1\times20\mu\text{F}$$
+			$$\text{C}=42\mu\text{F}$$
+		\end{itemize}
+		\subsection*{Additional Challenge Problems}
+		\textit{As usual, the following problems are not required to be submitted, but I highly suggest you work on them} 
+		\question Show, mathematically that the capacitance of a parallel plate capacitor of area A and plate separation distance d has a capacitance of $\text{C}=\epsilon_0\dfrac{\text{A}}{\text{d}}$. In addition, show that when a dielectric with a constant of $\kappa$ is added between the plates, show that the capacitance changes to $\text{C}=\kappa\epsilon_0\dfrac{\text{A}}{\text{d}}$ \\ \\ \textbf{Solution}\\
+		We can express the electric field strength in in terms of charge and area as follows:
+		$$\text{E}=\dfrac{\text{Q}}{\text{A}\varepsilon_0}$$
+		We have seen that we can express the potential difference between charged plates as a product of the field and the distance between them:
+		$$\text{V}=\text{Ed}$$
+		$$\text{V}=\dfrac{\text{Q}}{\text{A}\varepsilon_0}\text{d}=\dfrac{\text{Qd}}{\text{A}\varepsilon_0}$$
+		However, capacitance is defined as follows:
+		$$\text{C}=\dfrac{\text{Q}}{\text{V}}$$
+		$$\text{C}=\dfrac{\text{Q}}{\dfrac{\text{Qd}}{\text{A}\varepsilon_0}}$$
+		$$\text{C}=\dfrac{\varepsilon_0\text{A}}{\text{d}}$$
+		If we add a dielectric, the field decreases by a factor of $\kappa$
+		$$\text{E}_\text{f}=\dfrac{\text{E}}{\kappa}$$
+		$$\text{V}_\text{f}=\dfrac{\text{Vd}}{\kappa}$$
+		$$\text{V}_\text{f}=\dfrac{\dfrac{\text{Qd}}{\text{A}\varepsilon_0}}{\kappa}=\dfrac{\text{Qd}}{\text{A}\varepsilon_0\kappa}$$
+		Thus, the final capacitance after a dielectric has been added is given as follows:
+		$$\text{C}=\dfrac{\text{Q}}{\text{V}_\text{f}}$$
+		$$\text{C}=\dfrac{\text{Q}}{\dfrac{\text{Qd}}{\text{A}\varepsilon_0\kappa}}$$
+		$$\text{C}_\text{f}=\dfrac{\kappa\varepsilon_0\text{A}}{\text{d}}$$
+		\question Consider a region in space where a uniform electric field of E = 1000 N/C points in the positive X direction. Answer the following questions:\begin{itemize}
+			\item What is the orientation of the equipotential surfaces?\\ \\ \textbf{Solution}\\ 
+			We know that the equipotential lines and electric field lines are perpendicular. That means, if the electric field is in the X direction, the equipotential surfaces should be oriented in such a way that they lie on the Y or Z dimensions.
+			\item If you move in the negative X direction, does electric potential decrease or increase?\\ \\ \textbf{Solution}\\ 
+			The direction of electric field lines is always from higher potential to lower potential. Thus, as we go from negative X direction to the positive direction, the potential decreases. However, as we move to the negative x direction, the potential increases.
+			\item What is the distance between the +20 V and + 10 V potentials?
+			$$\Delta\text{V}=\text{Ed}$$
+			$$\text{d}=\dfrac{\Delta\text{V}}{\text{E}}$$
+			$$\text{d}=\dfrac{(20-10)\text{V}}{1000\text{N/C}}$$
+			$$\text{d}=\dfrac{(20-10)\text{V}}{1000\text{N/C}}$$
+			$$\text{d}=1\text{cm}$$
+		\end{itemize}
+	\end{questions}		
+\end{document}

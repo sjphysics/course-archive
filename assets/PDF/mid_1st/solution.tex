@@ -1,0 +1,175 @@
+\documentclass[13pt,addpoints]{exam}
+%\usepackage{enumitem}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{fillbetween}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=20mm,
+	top=20mm,
+}
+\date{December, 2022}
+\pagestyle{headandfoot}
+%\firstpageheadrule
+\runningheader{2nd Quarter Midterm Examination Solutions}{}{Page \thepage\ of \numpages}
+\runningheadrule
+
+\firstpagefooter{}{}{}
+\runningfooter{By Aaron G.K.}{}{Page \thepage\ of \numpages}
+
+
+\begin{document}
+	\title{St John Baptist De La Salle Catholic School, Addis Ababa\\
+		\large Grade 10 Physics Midterm Examination Solutions\\
+		$1^\text{st}$ Quarter}
+	\maketitle
+	\begin{center}
+		\fbox{\fbox{\parbox{6in}{\centering
+					Notes, and use of other aids is \textbf{NOT} allowed.  Read all directions carefully and \textbf{write your answers in the answer sheet}.  To receive full credit, you must show all of your work.
+		}}}
+		\subsubsection*{Useful Constants}
+		\begin{itemize}
+			\item $\textbf{a}_g=10m/s^2\text{  - acceleration due to gravity}$\textbf{~}$\textbf{G} = 6.672\times10^{-12}\frac{Nm^2}{kg^2}\text{  - gravitational constant}$
+		\end{itemize}
+		
+	\end{center}
+	{Name:\underline{\hspace{2in}}\text{     }{Roll Number:\underline{\hspace{0.5in}}\text{     }{Section:\underline{\hspace{0.3in}}{Time Allowed: \bf{45  minutes}}
+				\subsubsection*{Multiple Choice Questions}
+				\begin{questions}
+					\question An object rotates at a rate of about 6 rev/min. What is this in revolutions per second? \\
+					\begin{oneparchoices}
+						\choice 0.1 rev/s
+						\choice 12$\pi$rad/s
+						\choice 0.1 rad/s
+						\choice 6 rev/s
+					\end{oneparchoices} \\
+				\textbf{Answer: A}
+					\question If an object is rotating with a constant angular speed, which of the following is false? \\
+					\begin{oneparchoices}
+						\choice There is no torque acting on the object.
+						\choice The angular acceleration of the object is zero.
+						\choice The angular momentum is conserved.
+						\choice We don't need to do work to keep the object in rotation.
+					\end{oneparchoices} \\
+				\textbf{Answer: A}
+					\question What is Kepler's Second Law a result of? \\
+					\begin{oneparchoices}
+						\choice Conservation of Linear Momentum
+						\choice Conservation of Charge
+						\choice Conservation of Mass
+						\choice Conservation of Angular Momentum
+					\end{oneparchoices} \\
+				\textbf{Answer: D}
+					\question The trajectory of planets \& celestial bodies around the sun can't be one of the following geometric shapes: \\ 
+					\begin{oneparchoices}
+						\choice Ellipse
+						\choice Hyperbola
+						\choice Lemniscate
+						\choice Circle
+					\end{oneparchoices} \\
+				\textbf{Answer: C}
+					\question A point mass the is rotating on the x-axis 1m away from it. If its distance is reduced to 25cm,  by what factor does its moment of inertia change?\\
+					\begin{oneparchoices}
+						\choice $I_f=\dfrac{1}{4}I_i$
+						\choice $I_f=4I_i$
+						\choice $I_f=16I_i$
+						\choice $I_f=\dfrac{1}{16}I_i$
+					\end{oneparchoices} \\
+				\textbf{Answer: D}
+					\question  When is angular acceleration positive?
+					\begin{choices}
+						\choice Angular acceleration is the rate of change of the
+						displacement and is positive when $\omega$ increases.
+						\choice Angular acceleration is the rate of change of the
+						displacement and is positive when $\omega$ decreases.
+						\choice Angular acceleration is the rate of change of angular
+						velocity and is positive when $\omega$ increases.
+						\choice Angular acceleration is the rate of change of angular
+						velocity and is positive when $\omega$ decreases.
+					\end{choices} 
+				\textbf{Answer: C}
+					\question According to Kepler's Second Law, we do know that the aerial velocity of planets around the sun is constant. Which of the following is  a result of that?
+					\begin{choices}
+						\choice Planets travel with a constant speed during their trajectory.
+						\choice Planets travel faster when they're farthest from the sun and slower when they're near the sun.
+						\choice Planets travel faster when they're nearest to the sun and slower when they're farthest from the sun.
+						\choice Seasons occur because of this.
+					\end{choices}
+				\textbf{Answer: C}
+					\question What did Cavendish measure on the "Weighing the Earth" experiment? \\
+					\begin{oneparchoices}
+						\choice Weight of the Earth
+						\choice Acceleration due to gravity
+						\choice Gravitational constant
+						\choice Mass of the Earth
+					\end{oneparchoices} \\
+				\textbf{Answer: C}
+					\question When you push a door farther from the hinges, why does it open more fast?
+					\begin{choices}
+						\choice It opens fast, because the lever arm is shorter so
+						the torque is large.
+						\choice It opens fast, because the lever arm is longer so the
+						torque is large.
+						\choice It opens fast, because the lever arm is shorter so
+						the torque is less.
+						\choice It opens fast, because the lever arm is longer so
+						the torque is less.
+					\end{choices}
+				\textbf{Answer: B}
+					\question What is the gravitational force between two 70.0 kg
+					people sitting $70$ m apart? \\
+					\begin{oneparchoices}
+						\choice 1 N
+						\choice $6.67\times10^{-11}$N
+						\choice 70 N
+						\choice 0 N
+					\end{oneparchoices} \\
+				\textbf{Answer: B}
+					\subsubsection*{Work Out}
+					\question Answer the following questions about angular momentum:
+					\begin{itemize}
+						\item Show that the torque of a rotating system can be expressed in terms of the time rate of change of the angular momentum. \\
+						\textbf{Answer} \\
+						$$\tau_\text{net}=\text{I}\alpha$$
+						$$\tau_\text{net}=\text{I}\dfrac{\varDelta\omega}{\text{t}}$$
+						$$\tau_\text{net}=\dfrac{\text{I}\varDelta\omega}{\text{t}}$$
+						$$\tau_\text{net}=\dfrac{\varDelta\text{L}}{\text{t}}$$
+						\item If the net torque on a rotating system is 180Nm and it is acted on for 20 seconds, calculate the angular momentum change it causes. \\
+						\textbf{Answer} \\
+						$$\tau_\text{net}=\dfrac{\varDelta\text{L}}{\text{t}}$$
+						$$\varDelta\text{L}=\tau_{net}t$$
+						$$\varDelta\text{L}=\tau_{\text{net}}\text{t}$$
+						$$\varDelta\text{L}=180\text{Nm}\times20\text{s}$$
+					\end{itemize}
+					\question Consider a CD spinning anticlockwise. What is the sum of the instantaneous velocities of two points on both ends of its diameter? \\
+					\textbf{Answer} \\
+					Look at the figure below for instance. The velocity pairs on the top \& bottom and left \& right are pairs at the ends of diameters. If we calculate the sum of the velocity pairs, we can see that they are both opposite, in which case the sum is 0.
+					\begin{center}
+						\includegraphics[scale=0.4]{circle_inst}
+					\end{center}
+					\question Prove Kepler's Third Law.(\textit{For the sake of simplicity, assume the path of planets is circular)}.  \\
+					\textbf{Answer} \\
+					The proof is available in the notes.
+					\question Given that the moon orbits Earth each 27.3 days and that it is an average distance of $3.84\times10^{8}$m from the center of Earth, calculate the period of an artificial satellite orbiting at an average altitude of 1,500 km above Earth’s surface. \\
+					\textbf{Answer} \\
+					Use Kepler's third law to calculate the period of the satellite. \\ \\
+					Since $\text{T}^2\propto\text{R}^3$,
+					$$\dfrac{T^2_{moon}}{R^3_{moon}}=\dfrac{T^2_{satellite}}{R^3_{satellite}}$$
+					$$T^2_{satellite}=T^2_{moon}\dfrac{R^3_{satellite}}{R^3_{moon}}$$
+					$$T_{satellite}=\sqrt{T^2_{moon}(\dfrac{R_{satellite}}{R_{moon}})^3}$$
+					Input the values given and you should get the period of the satellite.
+					\question Let there be a hypothetical planet in our solar system that has an average distance of 2AU from the sun. From your proof above, deduce the period of the planet.(\textit{Note that the period of the Earth is 1 year and it is 1AU away from the sun}) \\ \\
+					\textbf{Answer:}
+					We use the same method as we did in the question above:
+					$$T_{planet}=\sqrt{T^2_{earth}(\dfrac{R_{planet}}{R_{earth}})^3}$$
+					When we calculate the period this way, it comes out to 2$\sqrt{2}$ years.
+				\end{questions}
+			\end{document}
